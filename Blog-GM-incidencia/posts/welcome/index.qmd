@@ -1,0 +1,31 @@
+---
+title: "Atlas Socioecológico"
+author: "Miguel Equihua"
+date: "2023-08-11"
+categories: [noticias]
+format:
+  html:
+    lang: es
+    toc: true
+    embed-resources: true
+    self-contained: true
+---
+
+En este documento se describe el concepto básico de un *Atlas socioecológico* que estamos interesados en desarrollar. El otro producto de nuestro interés es un *Catálogo de productos para la sustentabilidad*. Considerando el potencial de los *documentos impulsados por datos* (**D3**), pensamos que es posible integrar ambas cosas en un *producto Web* mixto.
+
+A continuación ilustraremos los elementos que podría contener un producto como el que hemos descrito. También hemos reunido algunos ejemplos que contienen soluciones que nos parecen interesantes para desarrollar el producto.
+
+### Video ilustrativo del atlas
+
+En este video utilizamos la çapacidad de crear [proyectos en Google Earth](https://earth.google.com/earth/d/1qji025WTTQ6wVb8Nks1iFkoB99ybp0v2?usp=sharing). Así que pueden interactuar con la idea directamente través del enlace anterior o darse una idea viendo el video que está abajo.
+
+
+{{include <video width="720" height="480" controls>
+<source src="images/Atlas-Concepto.mp4" type="video/mp4">
+</video>}}
+
+## Catálogo de soluciones
+
+El otro elemento que podría incluir este producto es un gráfico representativo de una jerarquía de temas, conceptos y productos. Algo parecido a lo que ofrece le [Foro Económico Mundial](https://intelligence.weforum.org/topics/a1Gb0000000LHVfEAO).
+
+![](images/Foro-economico.png)
