@@ -7,8 +7,6 @@ format:
   html:
     lang: es
     toc: true
-    embed-resources: true
-    self-contained: true
 ---
 
 En este documento se describe el concepto básico de un *Atlas socioecológico* que estamos interesados en desarrollar. El otro producto de nuestro interés es un *Catálogo de productos para la sustentabilidad*. Considerando el potencial de los *documentos impulsados por datos* (**D3**), pensamos que es posible integrar ambas cosas en un *producto Web* mixto.
@@ -20,9 +18,7 @@ A continuación ilustraremos los elementos que podría contener un producto como
 En este video utilizamos la çapacidad de crear [proyectos en Google Earth](https://earth.google.com/earth/d/1qji025WTTQ6wVb8Nks1iFkoB99ybp0v2?usp=sharing). Así que pueden interactuar con la idea directamente través del enlace anterior o darse una idea viendo el video que está abajo.
 
 
-{{include <video width="720" height="480" controls>
-<source src="images/Atlas-Concepto.mp4" type="video/mp4">
-</video>}}
+![](images/Atlas-Concepto.mp4)
 
 ## Catálogo de soluciones
 
