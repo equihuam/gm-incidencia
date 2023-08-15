@@ -1,0 +1,158 @@
+---
+title: "Modelación de tópicos"
+output: html_notebook
+---
+
+
+#### Modelación de Tópicos
+
+Quizás podríamos intentar usar un enfoque de [análisis automatizado de temas](https://community.alteryx.com/t5/Data-Science/Getting-to-the-Point-with-Topic-Modeling-Part-3-Interpreting-the/ba-p/614992).
+
+
+En **R** se puede hacer con la biblioteca [LDAvis](https://github.com/cpsievert/LDAvis)
+
+
+Junto conceptos por pronaii pora hacer este análisis
+
+```{r}
+library(stm)
+
+doc_pronaii <-  conceptos %>% 
+                  group_by(tema, id_p) %>% 
+                  summarise(doc_pr = str_c(concepto, collapse=", ")) 
+              
+```
+
+
+```{r}
+
+corpus <- textProcessor(documents = doc_pronaii$doc_pr, 
+                         metadata = doc_pronaii)
+```
+La biblioteca *stm* trata como objetos separados los documentos, sus metadatos y el "vocabulario" (lista completa de palabaras en el corpus) en documentos distintos.
+
+```{r}
+primer_STM <- stm(documents = corpus$documents, 
+                  vocab = corpus$vocab,
+                  K = 10,
+                  max.em.its = 75, 
+                  data = corpus$meta,
+                  init.type = "Spectral", verbose = FALSE)
+plot(primer_STM)
+num_tema <- length((unique(doc_pronaii$tema)))
+```
+### Etiquetar temas
+
+```{r}
+labelTopics(primer_STM,topics = c(1:10), n=4)
+```
+
+
+
+Limpieza de la bolsa de palabras
+
+```{r}
+library(LDAvis)
+library(tm)
+library(tidytext)
+
+stop_words <- tibble(word=stopwords(kind = "sp"))
+
+docs <- doc_pronaii$doc_pr
+# preprocesamiento:
+docs <- gsub("'", "", docs)  # remove apostrophes
+docs <- gsub("[[:punct:]]", " ", docs)  # replace punctuation with space
+docs <- gsub("[[:digit:]]", " ", docs)  # replace numbers with space
+
+docs <- gsub("[[:cntrl:]]", " ", docs)  # replace control characters with space
+docs <- gsub("^[[:space:]]+", "", docs) # remove whitespace at beginning of documents
+docs <- gsub("[[:space:]]+$", "", docs) # remove whitespace at end of documents
+docs <- tolower(docs)  # force to lowercase
+
+bigramas  <-  tibble(doc_pr = docs) %>% 
+  unnest_tokens(output = word, input = doc_pr, 
+                token = "ngrams", n = 2) %>% 
+  separate(word, c("word1", "word2"), sep = " ") %>% 
+  filter(!word1 %in% stop_words$word) %>%
+  filter(!word2 %in% stop_words$word) %>% 
+  filter(!word2 %in% word1) %>% 
+  unite(word,word1, word2, sep = " ") %>% 
+  count(word, sort = TRUE)
+  
+# tokenize on space and output as a list:
+docs.list <- strsplit(docs, "[[:space:]]+")
+
+# Remove all words with less than 4 characters
+docs.list <- lapply(docs.list, function(x) x[sapply(x, nchar)>3])
+
+# compute the table of terms:
+term.table <- table(unlist(docs.list))
+term.table <- sort(term.table, decreasing = TRUE)
+
+# remove terms that are stop words or occur fewer than 5 times:
+del <- names(term.table) %in% stop_words$word | term.table < 5
+term.table <- term.table[!del]
+vocab <- names(term.table)
+
+match(names(term.table[3]), vocab)
+
+# now put the documents into the format required by the lda package:
+get.terms <- function(x) {
+  index <- match(x, vocab)
+  index <- index[!is.na(index)]
+  rbind(as.integer(index - 1), as.integer(rep(1, length(index))))
+}
+documentos <- lapply(names(term.table), get.terms)
+
+# Compute some statistics related to the data set:
+D <- length(documentos)  # number of documents
+W <- length(vocab)  # number of terms in the vocab
+
+docs.length <- sapply(documentos, function(x) sum(x[2, ]))  # number of tokens per document
+N <- sum(docs.length)  # total number of tokens in the data
+term.frequency <- as.integer(term.table) 
+```
+
+erVis(json, out.dir = 'vis', open.browser = FALSE)
+
+
+```{r}
+library(lda)
+
+# MCMC and model tuning parameters:
+K <- 5
+G <- 5000
+alpha <- 0.02
+eta <- 0.02
+
+# Fit the model:
+set.seed(357)
+fit <- lda.collapsed.gibbs.sampler(documents = documentos, 
+                                   K = K, vocab = vocab, 
+                                   num.iterations = G, alpha = alpha, 
+                                   eta = eta, initial = NULL, burnin = 0,
+                                   compute.log.likelihood = TRUE)
+
+#tt <- fit$document_sums + alpha %>% 
+#     summarise(across(~./ sum(.)))
+
+theta <- t(apply(fit$document_sums + alpha, 2, function(x) x/sum(x)))
+phi <- t(apply(t(fit$topics) + eta, 2, function(x) x/sum(x)))
+
+ConceptsPronaii <- list(phi = phi,
+                        theta = theta,
+                        doc.length = docs.length,
+                        vocab = vocab,
+                        term.frequency = term.frequency)
+
+# create the JSON object to feed the visualization:
+json <- createJSON(phi = ConceptsPronaii$phi, 
+                   theta = ConceptsPronaii$theta, 
+                   doc.length = ConceptsPronaii$doc.length, 
+                   vocab = ConceptsPronaii$vocab, 
+                   term.frequency = ConceptsPronaii$term.frequency)
+
+#servr::daemon_stop(1)
+serVis(json, out.dir = 'vis', open.browser = TRUE)
+```
+

@@ -1,0 +1,425 @@
+---
+title: "Googledrive SQLite"
+format: html
+date: "2023-06-1"
+lang: es
+editor_options: 
+  chunk_output_type: console
+---
+
+## Uso de GoogleDrive como Base de datos
+
+Este documento ejemplifica el uso de Google Drive como base de datos. Además, es un esnayo de uso de *Observable JS* como base para aplicaciones interactivas. Puede aprenderse un poco más sobre esto en <https://quarto.org/docs/interactive/ojs/>.
+
+He recurrido a una pequeña herramienta que reune toda la información referente al contenido del Google Drive a partir de una carpeta inicial. Esa información la organiza en una pequeña base de datos que deposita en un archivo **SQLite**. La estructura de esta base de datos se ilustra a continuación:
+
+![](images/Pronaces-A.png)
+
+A esta estructura de *metadatos* de **Google Drive** le hemos agregado espacio para reunir la tabla de conceptos y el vínculo entre documentos y conceptos. Lo hacemos mediante dos tablas adicionales. De esta manera, la estructura de la base de datos quedaría como se ilustra en seguida.
+
+![](images/conceptos.png)
+
+## Listas de contenido en GD
+
+Elige una tabla para desplegar los elementos de información recabados:
+
+```{r prepara, echo=FALSE, warning=FALSE, results='hide',error=FALSE, include=FALSE}
+library(tidyverse)
+library(leaflet)
+
+options(rstudio.python.installationPath = "C:/Users/equih/.conda/envs/r_py/python.exe")
+```
+
+```{ojs gd_1}
+//| echo: false
+//| panel: input
+viewof tabla = Inputs.radio(
+  [
+    "drive_folders",
+    "drive_files",
+    "drive_users",
+    "conceptos",
+    "tema_doc",
+  ], 
+  { label: "Tabla:", value: "drive_folders"}
+)
+
+```
+
+Información recabada por *Google Drive* en la tabla seleccionada arriba:
+
+```{ojs gd_2}
+//| echo: false
+db = FileAttachment("pronaces.db").sqlite()
+
+db.describe(tabla)
+
+```
+
+Veamos ahora el contenido de una carpeta seleccionada. Para referencia y ejemplo consideremos la carpeta *Libro Semillas*. Prácticamente todas las búsquedas programáticas que hagamos recurrirán al **id** único, asignado a la carpeta de interés. ¿Cuál es el **id** de esta carpeta?. Usemos los recursos que acabamos de describir para averiguarlo.
+
+```{ojs gd_3}
+
+sql_id = "SELECT id, name FROM drive_folders WHERE  name LIKE '%Libro semillas%'"
+
+resultado_1 = db.query(sql_id)
+
+Inputs.table(resultado_1, {  columns: ["name", "id"]})
+```
+
+\
+\
+
+Así que el **id** en Google Drive del documento que nos interesa es: **1uOrhAvjddeDxgyfIyDaoyKNivp63vUvO**
+
+\
+\
+
+Ahora podemos averiguar que documentos o carpetas están aquí. Esto depende de dos tablas diferentes: *drive_files* y *drive_folders*.
+
+```{ojs gd_4}
+//| echo: false
+
+sql_base = "SELECT name, mimeType FROM drive_files WHERE _parent = '1uOrhAvjddeDxgyfIyDaoyKNivp63vUvO'"
+
+viewof consulta = Inputs.textarea({label: "Consulta", 
+                            placeholder: "Ingresa una consulta SQL", 
+                            value: sql_base, 
+                            submit: true})
+
+
+fld_interes = db.query(consulta)
+
+Inputs.table(fld_interes, {  columns: [
+    "name", "mimeType"]})
+```
+
+## Conceptos
+
+```{ojs concept_1}
+//| echo: false
+
+sunburst = {
+  const root = partition(flareData);
+
+  root.each(d => d.current = d);
+
+  const svg = d3.create("svg")
+      .attr("viewBox", [0, 0, width, width])
+      .style("font", "15px sans-serif");
+
+  const g = svg.append("g")
+      .attr("transform", `translate(${width / 2},${width / 2})`);
+
+  const path = g.append("g")
+    .selectAll("path")
+    .data(root.descendants().slice(1))
+    .join("path")
+      .attr("fill", d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
+      .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
+      .attr("d", d => arc(d.current));
+
+  path.filter(d => d.children)
+      .style("cursor", "pointer")
+      .on("click", clicked);
+
+  path.append("title")
+      .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${format(d.value)}`);
+
+  const label = g.append("g")
+      .attr("pointer-events", "none")
+      .attr("text-anchor", "middle")
+      .style("user-select", "none")
+    .selectAll("text")
+    .data(root.descendants().slice(1))
+    .join("text")
+      .attr("dy", "0.35em")
+      .attr("fill-opacity", d => +labelVisible(d.current))
+      .attr("transform", d => labelTransform(d.current))
+      .text(d => d.data.name);
+
+  const parent = g.append("circle")
+      .datum(root)
+      .attr("r", radius)
+      .attr("fill", "none")
+      .attr("pointer-events", "all")
+      .on("click", clicked);
+
+  function clicked(event, p) {
+    parent.datum(p.parent || root);
+
+    root.each(d => d.target = {
+      x0: Math.max(0, Math.min(1, (d.x0 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+      x1: Math.max(0, Math.min(1, (d.x1 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+      y0: Math.max(0, d.y0 - p.depth),
+      y1: Math.max(0, d.y1 - p.depth)
+    });
+
+    const t = g.transition().duration(750);
+
+    // Transition the data on all arcs, even the ones that aren’t visible,
+    // so that if this transition is interrupted, entering arcs will start
+    // the next transition from the desired position.
+    path.transition(t)
+        .tween("data", d => {
+          const i = d3.interpolate(d.current, d.target);
+          return t => d.current = i(t);
+        })
+      .filter(function(d) {
+        return +this.getAttribute("fill-opacity") || arcVisible(d.target);
+      })
+        .attr("fill-opacity", d => arcVisible(d.target) ? (d.children ? 0.6 : 0.4) : 0)
+        .attrTween("d", d => () => arc(d.current));
+
+    label.filter(function(d) {
+        return +this.getAttribute("fill-opacity") || labelVisible(d.target);
+      }).transition(t)
+        .attr("fill-opacity", d => +labelVisible(d.target))
+        .attrTween("transform", d => () => labelTransform(d.current));
+  }
+  
+  function arcVisible(d) {
+    return d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0;
+  }
+
+  function labelVisible(d) {
+    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.03;
+  }
+
+  function labelTransform(d) {
+    const x = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+    const y = (d.y0 + d.y1) / 2 * radius;
+    return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
+  }
+
+  return svg.node();
+}
+```
+
+```{ojs concept_2}
+//| echo: false
+
+flareData = FileAttachment("flare-2.json").json()
+
+partition = flareData => {
+  const root = d3.hierarchy(flareData)
+      .sum(d => d.value)
+      .sort((a, b) => b.value - a.value);
+  return d3.partition()
+      .size([2 * Math.PI, root.height + 1])
+    (root);
+}
+
+color = d3.scaleOrdinal(
+  d3.quantize(d3.interpolateRainbow, flareData.children.length + 1)
+)
+
+format = d3.format(",d")
+
+width = 932
+
+radius = width / 6
+
+arc = d3.arc()
+    .startAngle(d => d.x0)
+    .endAngle(d => d.x1)
+    .padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
+    .padRadius(radius * 1.5)
+    .innerRadius(d => d.y0 * radius)
+    .outerRadius(d => Math.max(d.y0 * radius, d.y1 * radius - 1))
+```
+
+## Mapas
+
+```{ojs map_a}
+//| echo: false
+
+L = {
+  const L = await require("leaflet/dist/leaflet.js");
+  if (!L._style) {
+    const href = await require.resolve("leaflet/dist/leaflet.css");
+    document.head.appendChild(L._style = html`<link href=${href} rel=stylesheet>`);
+  }
+
+  return L;
+};
+
+```
+
+
+:::::: {.panel-fill}
+```{ojs map_b}
+//| echo: false
+
+
+container = {
+
+  let x = d3.create("div")
+  
+  x.attr("style", `width:100%;height:${window.outerHeight * 0.65}px`);
+
+  return x.node();
+
+}
+
+```
+
+
+
+```{ojs map_c}
+//| echo: false
+
+
+southwest = {
+  
+  let map = L.map(container);
+  
+  // add basemap layers
+  const stamen = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+  
+  const esri = 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
+  
+  const Stamen_Terrain = L.tileLayer(
+  'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}', 
+  {
+  	attribution: stamen,
+  	subdomains: 'abcd',
+  	minZoom: 0,
+  	maxZoom: 18,
+  	ext: 'png'
+  });
+  
+  const Stamen_TonerLite = L.tileLayer(
+  'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', 
+  {
+    attribution: stamen,
+  	subdomains: 'abcd',
+  	minZoom: 0,
+  	maxZoom: 18,
+    ext: 'png'
+  });
+  
+  const Esri_WorldImagery = L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
+  {
+	  attribution: esri,
+	  minZoom: 0,
+  	maxZoom: 18,
+    ext: 'png'
+  }).addTo(map);
+  
+  // button to toggle basemap layer selection
+  L.control.layers(
+    {
+      "Stamen Terrain": Stamen_Terrain,
+      "Stamen TonerLite": Stamen_TonerLite,
+      "Esri World Imagery": Esri_WorldImagery
+    },
+    null,
+    {position: 'topleft'}
+  ).addTo(map);
+  
+  L.control.scale().addTo(map);
+  
+  map.setView([19.5438, -96.9102], 5);
+
+  return map; 
+
+};
+
+```
+
+```{ojs}
+//| panel: sidebar
+
+viewof year =  Inputs.range(
+  [1990, 2019], 
+  {value: 2019, step: 1, label: "Año"}
+)
+viewof k =  Inputs.range(
+  [20, 100], 
+  {value: 50, step: 1, label: "Radio max"}
+)
+meta = FileAttachment("data/worldbank_meta.csv").csv()
+viewof indicator = Inputs.select(
+  new Map(meta.map((d) => [d.indicator, d.shortcode])),
+  { label: "Indicador" }
+)
+projections = ["Patterson", "NaturalEarth1", "Bertin1953", "InterruptedSinusoidal", "Armadillo", "Baker", "Gingery", "Berghaus", "Loximuthal", "Healpix", "InterruptedMollweideHemispheres", "Miller", "Aitoff", "ConicEqualArea", "Eckert3", "Hill"]
+viewof proj = Inputs.select(projections, {label: "Proyección", width: 350})
+viewof color1 = Inputs.color({label: "color", value: "#4682b4"})
+viewof simpl =  Inputs.range( [0.01, 0.5], {value: 0.1, step: 0.01, label: "Simplificación"} )
+viewof x =  Inputs.range( [-180, 180], {value: 0, step: 1, label: "Rotation (x)"} )
+viewof y =  Inputs.range( [-90, 90], {value: 0, step: 1, label: "Rotation (y)"} )
+```
+
+```{ojs}
+//| echo: false
+
+bertin.draw({
+params: {projection: proj + `.rotate([${x}, ${y}])`, clip: true }, 
+layers:[
+  { type : "header", text: title},
+  {type: "bubble", geojson: data, values: indicator, 
+  fill: color1, fixmax: varmax, k, 
+  tooltip: ["$name",d => d.properties[indicator]]},
+  {geojson: world2, fill: "#CCC"},
+  {type: "graticule"},  
+  {type: "outline"}
+]})
+```
+
+```{ojs}
+Inputs.table(statsyear, {  columns: [
+    "country",
+    "capital_city",
+    "region",
+    indicator
+  ]})
+```
+
+```{ojs}
+//| echo: false
+
+viewof topnb = Inputs.range([5, 30], {label: "Número de países a mostrar", step: 1})
+top = statsyear.sort((a, b) => d3.descending(+a[indicator], +b[indicator]))
+  .slice(0, topnb)
+Plot.plot({
+    marginLeft: 60,
+      grid: true,
+  x: {
+    //type: "log",
+    label: "Años →"
+  },
+  y: {
+    label: "↑ Población",
+    //type: "log",
+  },
+  marks: [
+    Plot.barY(top, {
+      x: "iso3c",
+      y: indicator,
+      sort: { x: "y", reverse: true },
+      fill: color1
+    }),
+    Plot.ruleY([0])
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+
+world = FileAttachment("data/world.json").json()
+stats = FileAttachment("data/worldbank_data.csv").csv()
+geo = require("./lib/geotoolbox.js")
+world2 = geo.simplify(world, {k: simpl})
+bertin = require("./lib/bertin.js")
+statsyear = stats.filter(d => d.date == year)
+data = bertin.merge(world2, "id", statsyear, "iso3c")
+varmax = d3.max(stats.filter(d => d.date == 2019), d => +d[indicator])
+title = meta.map((d) => [d.indicator, d.shortcode]).find((d) => d[1] == indicator)[0] + " in " + year
+```
+
+::::::
+

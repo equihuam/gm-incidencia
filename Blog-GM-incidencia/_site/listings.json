@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/index.html"
+      "/posts/gs-sqlite-contenido/index.html",
+      "/posts/matriz-conceptos/index.html",
+      "/posts/atlas/index.html"
     ]
   }
 ]

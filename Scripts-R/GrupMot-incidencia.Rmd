@@ -1,0 +1,195 @@
+---
+title: "Grupo Motor Incidencia"
+subtitle: Datos Atlas y Catálogo
+output:
+  html_document:
+    df_print: paged
+    code_folding: hide
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+```{r inicio, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(googledrive))
+suppressPackageStartupMessages(library(googlesheets4))
+library(readxl)
+library(knitr)
+library(kableExtra)
+library(igraph)
+
+# Autenticación genérica
+suppressMessages(drive_auth(email = TRUE))
+```
+
+#### Datos reunidos en GoogleDrive
+
+```{r pronacess_ssys, warning=FALSE, include=FALSE}
+# localiza la carpeta PRONACES SSyS
+ssys_dir <- drive_find(n_max = 10, type = "folder", pattern = "^PRO")
+  
+# Contenido de la carpeta Pronaces SSyS
+ssys_carpetas <- drive_ls(path = ssys_dir$id, type = "folder") %>%
+            arrange(name)
+# Localizo la línea de interés para destacarla en la tabla
+linea_grupo <- which(str_detect(ssys_carpetas$name, "Comisiones"))
+```
+
+Procesamiento de los datos reunidos en la carpeta del **Pronaces SSyS** del Google Drive compartido. La lista de carpetas en el que tenemos las cosas del *Pronaces SSyS* es esta:
+
+
+
+```{r tabla_carpetas, warning=FALSE, echo=FALSE}
+kable(ssys_carpetas[, 1], col.names = "Carpetas Pronaces SSyS") %>% 
+  kable_styling() %>% 
+  kable_paper("hover", full_width = F) %>% 
+  row_spec(row = linea_grupo, background = "yellow")
+
+```
+
+##### Consolidación de los datos
+
+```{r consolida, warning=FALSE, include=FALSE}
+
+ssys_inci_dirs <- ssys_carpetas %>% 
+                  filter(str_detect(name, "Comisiones")) %>% 
+                  drive_ls(type = "folder") %>% 
+                  filter(str_detect(name, "Incidencia")) %>% 
+                  drive_ls() %>% 
+                  arrange(name)
+```
+1
+Ahora exploramos los datos que hemos reunido en el grupo motor de incidencia. Hay que localizar en dónde están esos datos. Los busco en la carpeta general de *Comisiones del Grupo Operativo*. Están en el documento *Interacción temáticas Pronaiis Pronaces SSyS*
+
+```{r hojas, warning=FALSE, echo=FALSE}
+
+linea_interac <- which(str_detect(ssys_inci_dirs$name, "Inter.*temática"))
+
+kable(ssys_inci_dirs[, 1], col.names = "Carpetas GM-Incidencia") %>% 
+  kable_styling() %>% 
+  kable_paper("hover", full_width = F) %>% 
+  row_spec(row = linea_interac, background = "yellow")
+
+```
+
+#### Interacciones temáticas
+
+Reflexionando sobre el asunto que queremos desarrollar, imagino que una forma de organizar estos datos es contruyendo un cubo de relaciones entre los conceptos propuestos por los *Pronaii*. La meta es entonces presentar así lo que hemos reunido en el documento *Interacción temáticas Pronaiis Pronaces SSyS*.
+
+```{r lee_sprsh, echo=FALSE, include=TRUE}
+
+# Identifico el folder de interés: Interacción temática
+ssys_doc_concept <- ssys_inci_dirs %>% 
+                    filter(str_detect(name, "^Interacción")) 
+
+# Dependiendo del tipo de documento "spreadsheet" cambia la forma de cómputo
+if (grepl("officedocument", ssys_doc_concept$drive_resource[[1]]$mimeType))
+{
+  drive_download(ssys_doc_concept, "Atlas.xlsx")
+  read_xlsx()
+} else {
+    concept_libro <- ssys_doc_concept %>% gs4_get() 
+    num_hj <- dim(concept_libro$sheets)
+                               
+    concept_libro$sheets$name
+    concept_hojas <- list()
+    for (hj_i in concept_libro$sheets$index[c(-1, - num_hj[1])])
+    {
+      hj_n <- concept_libro$sheets$name[hj_i + 1]
+      concept_hojas[[hj_n]] <- concept_libro %>% 
+                               read_sheet(hj_i + 1, skip = 2, col_names = TRUE) %>%
+                               select_if(~ !all(is.na(.)))
+    }
+}
+  
+```
+
+
+##### Categorías conceptuales
+
+Veamos que categorías conceptuales se han agregado a la lista de temas. Asumiré que esto aparece como *encabezado de columnas*. Subordinado a este nivel están los conceptos propuestos, idealmente como palabras sueltas, bigramas o máximo trigramas. Desafortunadamente encontramos frases explicativas largas que habrá que retrabajar. 
+
+Hay algunas columnas que no quedaron adecuadamente etiquetadas, pues el equipo respectivo optó por expandir la celda sobre varias columnas. Corregiremos esto asignando la última etiqueta significativa encontrada antes de una referencia numérica a columna. Esto sólo está ocurriendo en *temas*. Esta operación puede tener distinto efecto en cada hoja, así que hay que hacerla en cada una por separado.
+
+Hay algunas celdas quue contienen varias ideas separadas por comas, otras las separan con diagonales. Asumiré que esas listas tratan  de varios "concepto" distintos, así que los separaré.
+
+```{r conceptos, echo=FALSE, include=TRUE}
+
+# Datos generales de las hojas
+hojas <- names(concept_hojas)
+print("Hojas procesadas:")
+
+# Proceso las hojas individualmente
+for (hj in hojas) 
+{
+  pronaii <- concept_hojas[[hj]]
+  print(paste0("    ", hj))
+  
+  # columnas en la hoja
+  num_col <- length(names(pronaii))
+  
+  # elimmino la primera columna "temáticas"
+  temas <- pronaii[, -1] %>% 
+           pivot_longer(1:(num_col -1), names_to = "tema", 
+                        values_to = "concepto") %>% 
+           drop_na()
+  
+  # Repite nombre de columnas precedente en columnas sin nombre.
+  nom_col <-  which(str_detect(temas$tema, "...[0-9]+"))
+  for (i in nom_col)
+  {
+    temas$tema[i] <- temas$tema[i - 1] 
+  }
+  
+  # Separa celdas con varios items separados por comas
+  temas <- temas %>% separate_longer_delim(concepto, ",") %>% 
+                     separate_longer_delim(concepto, "/") %>%
+                     filter(!concepto == " ") %>% 
+                     filter(!concepto == "") %>%
+                     mutate(concepto = str_squish(concepto),
+                            id_p = hj,
+                            id = 1) 
+
+
+  if (hj == hojas[1])
+  {  
+    conceptos <- bind_rows(temas)
+  } else {
+    conceptos <- conceptos %>% bind_rows(temas)
+  }
+
+conceptos <- conceptos %>%  
+             arrange(id_p, tema) %>% 
+             relocate(id_p, .before = tema) %>% 
+             distinct()
+}
+```
+
+Los datos reunidos y el resultado de las operaciones de corrección de datos descrita se guardan en el archivo: **cubo_de_conceptos.csv**.
+
+
+```{r resultados, echo=FALSE, include=TRUE}
+# Matríz de correspodencias concepto-pronaii
+conceptos_w <- conceptos %>% 
+               distinct(tema, concepto, .keep_all= TRUE) %>% 
+               pivot_wider(names_from = id_p, values_from = id) %>%
+               mutate_if(is.numeric, ~replace_na(., 0)) %>% 
+               arrange(tema, concepto) 
+
+# Guardo los datos en mi máquina
+kable(conceptos_w) %>% 
+  kableExtra::kable_paper(full_width = FALSE) %>% 
+  kableExtra::kable_classic()
+
+
+write_excel_csv(conceptos_w, "cubo_de_conceptos.csv", col_names = TRUE)
+
+```
+
+
+
+
+
+
+
