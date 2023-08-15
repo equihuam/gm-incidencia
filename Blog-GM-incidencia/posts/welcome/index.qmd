@@ -3,9 +3,9 @@ title: "Atlas Socioecológico"
 author: "Miguel Equihua"
 date: "2023-08-11"
 categories: [noticias]
+lang: es
 format:
   html:
-    lang: es
     toc: true
 ---
 
@@ -13,15 +13,11 @@ En este documento se describe el concepto básico de un *Atlas socioecológico* 
 
 A continuación ilustraremos los elementos que podría contener un producto como el que hemos descrito. También hemos reunido algunos ejemplos que contienen soluciones que nos parecen interesantes para desarrollar el producto.
 
-
 ### Video ilustrativo del atlas
 
 En este video utilizamos la çapacidad de crear [proyectos en Google Earth](https://earth.google.com/earth/d/1qji025WTTQ6wVb8Nks1iFkoB99ybp0v2?usp=sharing). Así que pueden interactuar con la idea directamente través del enlace anterior o darse una idea viendo el video que está abajo.
 
-
 ![](images/Atlas-Concepto.mp4)
-
-
 
 ## Catálogo de soluciones
 
