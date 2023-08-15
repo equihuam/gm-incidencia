@@ -8,6 +8,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+![](wordCloud_3.png)
+
 
 ```{r inicio, warning=FALSE, include=FALSE}
 suppressPackageStartupMessages(library(tidyverse))
