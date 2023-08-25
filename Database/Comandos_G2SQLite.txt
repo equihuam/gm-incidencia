@@ -1,0 +1,4 @@
+google-drive-to-sqlite auth --google-client-id 1001514210392-utv7h13jlr6d9pvojhdv0cotio31pbnj.apps.googleusercontent.com --google-client-secret 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
+
+Datos de contenido en "Materiales para atlas" 
+google-drive-to-sqlite files atlCat.db --folder "1n4FsXXkVNLy4wwyqbJmg64i9HZAPGbL8"
