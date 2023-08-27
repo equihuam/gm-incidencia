@@ -10,7 +10,6 @@ editor_options:
 
 ![](wordCloud_3.png)
 
-
 ```{r inicio, warning=FALSE, include=FALSE}
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(googledrive))
@@ -39,8 +38,6 @@ linea_grupo <- which(str_detect(ssys_carpetas$name, "Comisiones"))
 
 Procesamiento de los datos reunidos en la carpeta del **Pronaces SSyS** del Google Drive compartido. La lista de carpetas en el que tenemos las cosas del *Pronaces SSyS* es esta:
 
-
-
 ```{r tabla_carpetas, warning=FALSE, echo=FALSE}
 kable(ssys_carpetas[, 1], col.names = "Carpetas Pronaces SSyS") %>% 
   kable_styling() %>% 
@@ -60,8 +57,8 @@ ssys_inci_dirs <- ssys_carpetas %>%
                   drive_ls() %>% 
                   arrange(name)
 ```
-1
-Ahora exploramos los datos que hemos reunido en el grupo motor de incidencia. Hay que localizar en dónde están esos datos. Los busco en la carpeta general de *Comisiones del Grupo Operativo*. Están en el documento *Interacción temáticas Pronaiis Pronaces SSyS*
+
+1 Ahora exploramos los datos que hemos reunido en el grupo motor de incidencia. Hay que localizar en dónde están esos datos. Los busco en la carpeta general de *Comisiones del Grupo Operativo*. Están en el documento *Interacción temáticas Pronaiis Pronaces SSyS*
 
 ```{r hojas, warning=FALSE, echo=FALSE}
 
@@ -106,19 +103,19 @@ if (grepl("officedocument", ssys_doc_concept$drive_resource[[1]]$mimeType))
   
 ```
 
-
 ##### Categorías conceptuales
 
-Veamos que categorías conceptuales se han agregado a la lista de temas. Asumiré que esto aparece como *encabezado de columnas*. Subordinado a este nivel están los conceptos propuestos, idealmente como palabras sueltas, bigramas o máximo trigramas. Desafortunadamente encontramos frases explicativas largas que habrá que retrabajar. 
+Veamos que categorías conceptuales se han agregado a la lista de temas. Asumiré que esto aparece como *encabezado de columnas*. Subordinado a este nivel están los conceptos propuestos, idealmente como palabras sueltas, bigramas o máximo trigramas. Desafortunadamente encontramos frases explicativas largas que habrá que retrabajar.
 
 Hay algunas columnas que no quedaron adecuadamente etiquetadas, pues el equipo respectivo optó por expandir la celda sobre varias columnas. Corregiremos esto asignando la última etiqueta significativa encontrada antes de una referencia numérica a columna. Esto sólo está ocurriendo en *temas*. Esta operación puede tener distinto efecto en cada hoja, así que hay que hacerla en cada una por separado.
 
-Hay algunas celdas quue contienen varias ideas separadas por comas, otras las separan con diagonales. Asumiré que esas listas tratan  de varios "concepto" distintos, así que los separaré.
+Hay algunas celdas que contienen varias ideas separadas por comas, otras las separan con diagonales. Asumiré que esas listas tratan de varios "concepto" distintos, así que los separaré.
 
 ```{r conceptos, echo=FALSE, include=TRUE}
 
 # Datos generales de las hojas
 hojas <- names(concept_hojas)
+hojas <- hojas[!grepl("Introducción", hojas)]
 print("Hojas procesadas:")
 
 # Proceso las hojas individualmente
@@ -155,20 +152,21 @@ for (hj in hojas)
 
   if (hj == hojas[1])
   {  
-    conceptos <- bind_rows(temas)
+    conceptos <- temas
   } else {
     conceptos <- conceptos %>% bind_rows(temas)
   }
+}
 
 conceptos <- conceptos %>%  
              arrange(id_p, tema) %>% 
-             relocate(id_p, .before = tema) %>% 
-             distinct()
-}
+             relocate(id_p, .after = concepto) %>% 
+             distinct()    
+
+
 ```
 
 Los datos reunidos y el resultado de las operaciones de corrección de datos descrita se guardan en el archivo: **cubo_de_conceptos.csv**.
-
 
 ```{r resultados, echo=FALSE, include=TRUE}
 # Matríz de correspodencias concepto-pronaii
@@ -188,9 +186,41 @@ write_excel_csv(conceptos_w, "cubo_de_conceptos.csv", col_names = TRUE)
 
 ```
 
+```{r}
 
+top_level_val <- unique(conceptos$tema)
+nested_df <- unique(conceptos[c("tema", "concepto", "id_p", "id")])
+c("children", "name", "info.x", "percentage.x")
 
+output <- lapply(top_level_val, function(root) 
+  {
+    root_lst <- list(name = root)
+    
+    root_lst$tema <- lapply(1:nrow(nested_df), function(i) 
+      {
+       chld_mrg <- merge(nested_df[nested_df$tema == nested_df$tema[i],], conceptos)
+      
+       parent_lst <- list(name = nested_df$tema[i][1],
+                          tooltip = nested_df$id_p[i][1],
+                          percentage = nested_df$id[i][1]
+      )
+       parent_lst$children <- lapply(1:nrow(chld_mrg), function(j) 
+         list(name = conceptos$tema.y[j][1],
+              tooltip = conceptos$id_p.y[j][1],
+              percentage = conceptos$id.y[j][1]
+              )
+      )
+       return(parent_lst)
+    })
+  
+  return(root_lst)
+})
 
+# CONVERT TO JSON STRING
+jdata <- toJSON(output[[1]], pretty=TRUE, auto_unbox=TRUE)
 
-
-
+# WRITE TO DISK
+fileConn <- file("NestParentChildJSON.json")
+  writeLines(jdata, fileConn)
+close(fileConn)
+```

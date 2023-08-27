@@ -1,0 +1,2428 @@
+{
+ "name": "temas",  "children": 
+ [
+    {
+      "name": "Actores",
+      "children": [
+        {
+          "name": "Apicultoras y Apicultores",
+          "value": 1
+        },
+        {
+          "name": "Ejidatario (a)s",
+          "value": 1
+        },
+        {
+          "name": "Apicultores",
+          "value": 1
+        },
+        {
+          "name": "acedemicos",
+          "value": 1
+        },
+        {
+          "name": "funcionarios de gobierno",
+          "value": 1
+        },
+        {
+          "name": "SEDATU",
+          "value": 1
+        },
+        {
+          "name": "COEPRIS",
+          "value": 1
+        },
+        {
+          "name": "Academia",
+          "value": 1
+        },
+        {
+          "name": "COFEPRIS",
+          "value": 1
+        },
+        {
+          "name": "SEMAR",
+          "value": 1
+        },
+        {
+          "name": "SEMARNAT",
+          "value": 1
+        },
+        {
+          "name": "Permisionarios locales",
+          "value": 1
+        },
+        {
+          "name": "Industria privada de maricultura",
+          "value": 1
+        },
+        {
+          "name": "Sociedad civil",
+          "value": 1
+        },
+        {
+          "name": "Sector salud",
+          "value": 1
+        },
+        {
+          "name": "Comisión Estatal de Servicios Públicos de Ensenada",
+          "value": 1
+        },
+        {
+          "name": "CONANP",
+          "value": 1
+        },
+        {
+          "name": "Comunidades pesqueras",
+          "value": 1
+        },
+        {
+          "name": "Sector turistico",
+          "value": 1
+        },
+        {
+          "name": "Productores (acuacultores)",
+          "value": 1
+        },
+        {
+          "name": "Consejo Totonaco de Organizaciones y Comunidades",
+          "value": 1
+        },
+        {
+          "name": "Consejo Estatal de Productores de Vainilla Veracruzanos A.C.",
+          "value": 1
+        },
+        {
+          "name": "Consejo para la Protección y Preservación de la Ceremonia Ritual de Voladores A.C.",
+          "value": 1
+        },
+        {
+          "name": "Tsumat Artesanía Totonaca",
+          "value": 1
+        },
+        {
+          "name": "UNAM",
+          "value": 1
+        },
+        {
+          "name": "Facultad de Ciencias",
+          "value": 1
+        },
+        {
+          "name": "Facultad de Ingenieria",
+          "value": 1
+        },
+        {
+          "name": "Instituto de Geología",
+          "value": 1
+        },
+        {
+          "name": "Institudo de Biología",
+          "value": 1
+        },
+        {
+          "name": "Universidad Libre de Bruselas",
+          "value": 1
+        },
+        {
+          "name": "Bélgica",
+          "value": 1
+        },
+        {
+          "name": "Dirección General de Divulgación de la Ciencia",
+          "value": 1
+        },
+        {
+          "name": "Universidad Veracruzana",
+          "value": 1
+        },
+        {
+          "name": "Itzeni A.C.",
+          "value": 1
+        },
+        {
+          "name": "Universidad Autonoma del Estado de Hidalgo",
+          "value": 1
+        },
+        {
+          "name": "Universidad Sueca de Ciencias Agrícolas (SLU)",
+          "value": 1
+        },
+        {
+          "name": "Instituto de Ecología",
+          "value": 1
+        },
+        {
+          "name": "Instituto de Investigaciones Económicas",
+          "value": 1
+        },
+        {
+          "name": "IRD",
+          "value": 1
+        },
+        {
+          "name": "MNHN (Museo Nacional de Historia Natural)",
+          "value": 1
+        },
+        {
+          "name": "Paris",
+          "value": 1
+        },
+        {
+          "name": "Universidad Paris 8 Francia",
+          "value": 1
+        },
+        {
+          "name": "Soluciones Circulares A.C.",
+          "value": 1
+        },
+        {
+          "name": "INRAE",
+          "value": 1
+        },
+        {
+          "name": "Herpetología Mexicana",
+          "value": 1
+        },
+        {
+          "name": "Coco Tortuga A.C.",
+          "value": 1
+        },
+        {
+          "name": "Productores Agrícolas Hermanos Flores S.P.R. de R.L. de C.V",
+          "value": 1
+        },
+        {
+          "name": "El Colegio de la Frontera Sur (ECOSUR)",
+          "value": 1
+        },
+        {
+          "name": "Instituto Nacional de Investigaciones Forestales",
+          "value": 1
+        },
+        {
+          "name": "Agrícolas y Pecuarias (INIFAP)",
+          "value": 1
+        },
+        {
+          "name": "Instituto de Ecología A. C. (INECOL)",
+          "value": 1
+        },
+        {
+          "name": "Universidad de Ciencias y Artes de Chiapas (UNICACH)",
+          "value": 1
+        },
+        {
+          "name": "Universidad Autónoma Chapingo (UACH-CRUO)",
+          "value": 1
+        },
+        {
+          "name": "CAFECOL",
+          "value": 1
+        },
+        {
+          "name": "Coordinadora Latinoamericana y del Caribe de Pequeños(as) Productores(as) y Trabajadores(as) de Comercio Justo (CLAC)",
+          "value": 1
+        },
+        {
+          "name": "Fondo para la Paz (FPP)",
+          "value": 1
+        },
+        {
+          "name": "Campesinos Ecológicos de la Sierra Madre de Chiapas (CESMACH)",
+          "value": 1
+        },
+        {
+          "name": "OXFAM México",
+          "value": 1
+        },
+        {
+          "name": "Universidad Nacional Autónoma de México (UNAM)",
+          "value": 1
+        },
+        {
+          "name": "Cholom Balá",
+          "value": 1
+        },
+        {
+          "name": "Unión Majomut",
+          "value": 1
+        },
+        {
+          "name": "CEPCO",
+          "value": 1
+        },
+        {
+          "name": "Café Gourmet Sierra Azul",
+          "value": 1
+        },
+        {
+          "name": "Maya Vinic",
+          "value": 1
+        },
+        {
+          "name": "Comon Yaj Noptic",
+          "value": 1
+        },
+        {
+          "name": "INCAFESAM",
+          "value": 1
+        },
+        {
+          "name": "Sociedad Civil Triunfo Verde",
+          "value": 1
+        },
+        {
+          "name": "Catuai Amarillo",
+          "value": 1
+        },
+        {
+          "name": "Yeni Navan",
+          "value": 1
+        },
+        {
+          "name": "Productores Sierra de Zongolica",
+          "value": 1
+        },
+        {
+          "name": "Unión de Comunidades Indígenas de la Región del Istmo (UCIRI)",
+          "value": 1
+        },
+        {
+          "name": "Consejo Consultivo de Cambio Climático",
+          "value": 1
+        },
+        {
+          "name": "Tseltal Tsotsil",
+          "value": 1
+        },
+        {
+          "name": "Fairtrade de Oaxaca y Chiapas",
+          "value": 1
+        },
+        {
+          "name": "Instituto tecnológico de Huatusco",
+          "value": 1
+        },
+        {
+          "name": "SADER",
+          "value": 1
+        },
+        {
+          "name": "SEBIEN",
+          "value": 1
+        },
+        {
+          "name": "Secretaría de Economía",
+          "value": 1
+        },
+        {
+          "name": "Universidad Benito Juárez de Oaxaca",
+          "value": 1
+        },
+        {
+          "name": "Universidad Autónoma de Chiapas",
+          "value": 1
+        },
+        {
+          "name": "CONANP",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Cambios que se están buscando",
+      "children": [
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en alianza de saberes",
+          "value": 1
+        },
+        {
+          "name": "Normativos",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Prevención en la población",
+          "value": 1
+        },
+        {
+          "name": "Aumento de la sustentabilidad costero",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de sustentabilidad y bienestar costero",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Confirmación de la identificación morfológica y molecular de especies de dinoflagelados.",
+          "value": 1
+        },
+        {
+          "name": "Mitigación de los impactos en la población",
+          "value": 1
+        },
+        {
+          "name": "Catalogo de especies nocivas con secuencias de ADN de cepas regionales y detalles morfológicos",
+          "value": 1
+        },
+        {
+          "name": "Efecto de FAN sobre organismos de importancia comercial",
+          "value": 1
+        },
+        {
+          "name": "Predicción de los eventos FAN",
+          "value": 1
+        },
+        {
+          "name": "Descripción de efectos nocivos de especies tóxicas en camarones",
+          "value": 1
+        },
+        {
+          "name": "Monitorear la zona de alimentación del tiburón ballena",
+          "value": 1
+        },
+        {
+          "name": "Listado de especies más abundantes en la zona y su variabilidad mensual",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Reforestación de importancia ecológica autóctona",
+          "value": 1
+        },
+        {
+          "name": "Reforestación con plantas de importancia cultural y ecológica",
+          "value": 1
+        },
+        {
+          "name": "Abundancia de micorrizas en raíces terrestres secundarias",
+          "value": 1
+        },
+        {
+          "name": "Regeneración de habitats para la fauna",
+          "value": 1
+        },
+        {
+          "name": "Protección de fauna de valor cultural",
+          "value": 1
+        },
+        {
+          "name": "Abundancia de micorrizas en raíces terrestres primarias",
+          "value": 1
+        },
+        {
+          "name": "Conversión a sistemas agroforestal",
+          "value": 1
+        },
+        {
+          "name": "Reforestación con plantas de importancia ecológica autóctona en sistemas agroforestal",
+          "value": 1
+        },
+        {
+          "name": "Acumulación de especies herpetofaunísticas",
+          "value": 1
+        },
+        {
+          "name": "Desarrollo de biofertilizante",
+          "value": 1
+        },
+        {
+          "name": "Reforestación con plantas de importancia ecológica autóctona",
+          "value": 1
+        },
+        {
+          "name": "Número de recursos turisticos convertidos en atractivos",
+          "value": 1
+        },
+        {
+          "name": "Restauración ambiental de las zonas afectadas",
+          "value": 1
+        },
+        {
+          "name": "Impulso del artesania local",
+          "value": 1
+        },
+        {
+          "name": "Acumulación de especies vegetales",
+          "value": 1
+        },
+        {
+          "name": "Corredor biológico",
+          "value": 1
+        },
+        {
+          "name": "Red de semillas nativas entre productores",
+          "value": 1
+        },
+        {
+          "name": "Acumulación de mesofauna",
+          "value": 1
+        },
+        {
+          "name": "Banco de semillas de árboles nativos",
+          "value": 1
+        },
+        {
+          "name": "Impulso de huertos familiares",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        },
+        {
+          "name": "Mantener fertilidad",
+          "value": 1
+        },
+        {
+          "name": "Incremento del valor del café para las familias que venden producto directamente en cafeterías",
+          "value": 1
+        },
+        {
+          "name": "Mantener agrobiodiversidad",
+          "value": 1
+        },
+        {
+          "name": "Manejo holístico de plagas y enfermedades",
+          "value": 1
+        },
+        {
+          "name": "Adaptación basada en la Naturaleza",
+          "value": 1
+        },
+        {
+          "name": "Soluciones basadas en el conocimiento indígena o local",
+          "value": 1
+        },
+        {
+          "name": "Indicadores de resultado",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Enfoque cultural /",
+      "children": [
+        {
+          "name": "Alianza de saberes",
+          "value": 1
+        },
+        {
+          "name": "comunidades",
+          "value": 1
+        },
+        {
+          "name": "cooperativas pesqueras",
+          "value": 1
+        },
+        {
+          "name": "Permisionarios para la extracción de almeja generosa",
+          "value": 1
+        },
+        {
+          "name": "Pescadores",
+          "value": 1
+        },
+        {
+          "name": "productores",
+          "value": 1
+        },
+        {
+          "name": "prestadores de servicios turísticos",
+          "value": 1
+        },
+        {
+          "name": "Guardaparques",
+          "value": 1
+        },
+        {
+          "name": "Cosmovisión totonaca",
+          "value": 1
+        },
+        {
+          "name": "Usos y costumbres totonacos",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Enfoques",
+      "children": [
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque intergeneracional",
+          "value": 1
+        },
+        {
+          "name": "Perspectiva de género",
+          "value": 1
+        },
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque intergeneracional",
+          "value": 1
+        },
+        {
+          "name": "Interculturalidad",
+          "value": 1
+        },
+        {
+          "name": "Perspectiva de género",
+          "value": 1
+        },
+        {
+          "name": "Sustentabilidad",
+          "value": 1
+        },
+        {
+          "name": "Transdisciplina",
+          "value": 1
+        },
+        {
+          "name": "Economía circular",
+          "value": 1
+        },
+        {
+          "name": "Respuesta a cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Sistemas agroforestales",
+          "value": 1
+        },
+        {
+          "name": "Buen vivir",
+          "value": 1
+        },
+        {
+          "name": "Gobernanza",
+          "value": 1
+        },
+        {
+          "name": "Valoración contingente",
+          "value": 1
+        },
+        {
+          "name": "Histeresis biocultural",
+          "value": 1
+        },
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque intergeneracional",
+          "value": 1
+        },
+        {
+          "name": "Enfoque de sistemas socioecológicos",
+          "value": 1
+        },
+        {
+          "name": "Enfoque intergeneracional",
+          "value": 1
+        },
+        {
+          "name": "Interculturalidad",
+          "value": 1
+        },
+        {
+          "name": "Perspectiva de género",
+          "value": 1
+        },
+        {
+          "name": "Interculturalidad",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Estados / entidades de la República Mexicana",
+      "children": [
+        {
+          "name": "Campeche",
+          "value": 1
+        },
+        {
+          "name": "Yucatán",
+          "value": 1
+        },
+        {
+          "name": "Quintana Roo",
+          "value": 1
+        },
+        {
+          "name": "Baja California",
+          "value": 1
+        },
+        {
+          "name": "Baja California Sur",
+          "value": 1
+        },
+        {
+          "name": "Veracruz",
+          "value": 1
+        },
+        {
+          "name": "Chihuahua",
+          "value": 1
+        },
+        {
+          "name": "Sonora",
+          "value": 1
+        },
+        {
+          "name": "Durango",
+          "value": 1
+        },
+        {
+          "name": "Michoacán",
+          "value": 1
+        },
+        {
+          "name": "Guerrero",
+          "value": 1
+        },
+        {
+          "name": "Jalisco",
+          "value": 1
+        },
+        {
+          "name": "Puebla",
+          "value": 1
+        },
+        {
+          "name": "Oaxaca",
+          "value": 1
+        },
+        {
+          "name": "Querétaro",
+          "value": 1
+        },
+        {
+          "name": "México",
+          "value": 1
+        },
+        {
+          "name": "Chiapas",
+          "value": 1
+        },
+        {
+          "name": "Oaxaca",
+          "value": 1
+        },
+        {
+          "name": "Veracruz",
+          "value": 1
+        },
+        {
+          "name": "Yucatán",
+          "value": 1
+        },
+        {
+          "name": "Chiapas",
+          "value": 1
+        },
+        {
+          "name": "Campeche",
+          "value": 1
+        },
+        {
+          "name": "Quintana Roo",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Etnia o grupo indígena",
+      "children": [
+        {
+          "name": "Mayas",
+          "value": 1
+        },
+        {
+          "name": "Totonaca",
+          "value": 1
+        },
+        {
+          "name": "Nahuas",
+          "value": 1
+        },
+        {
+          "name": "Otomí",
+          "value": 1
+        },
+        {
+          "name": "Mayas",
+          "value": 1
+        },
+        {
+          "name": "Mixes",
+          "value": 1
+        },
+        {
+          "name": "Cuicatecos",
+          "value": 1
+        },
+        {
+          "name": "Mixtecos",
+          "value": 1
+        },
+        {
+          "name": "Zapotecos",
+          "value": 1
+        },
+        {
+          "name": "Nahuas",
+          "value": 1
+        },
+        {
+          "name": "Chontales",
+          "value": 1
+        },
+        {
+          "name": "Chatinos",
+          "value": 1
+        },
+        {
+          "name": "Chol",
+          "value": 1
+        },
+        {
+          "name": "Mam",
+          "value": 1
+        },
+        {
+          "name": "Kaqchikel",
+          "value": 1
+        },
+        {
+          "name": "Zoque",
+          "value": 1
+        },
+        {
+          "name": "Chinanteco",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Inclusión de grupos poblacionales",
+      "children": [
+        {
+          "name": "Pueblos indígenas",
+          "value": 1
+        },
+        {
+          "name": "Niñas",
+          "value": 1
+        },
+        {
+          "name": "Niños y Adolescentes (NNA)",
+          "value": 1
+        },
+        {
+          "name": "Mujeres",
+          "value": 1
+        },
+        {
+          "name": "Juventudes",
+          "value": 1
+        },
+        {
+          "name": "Personas adultas mayores",
+          "value": 1
+        },
+        {
+          "name": "Pueblos indígenas",
+          "value": 1
+        },
+        {
+          "name": "Juventudes",
+          "value": 1
+        },
+        {
+          "name": "Mujeres",
+          "value": 1
+        },
+        {
+          "name": "Niñas",
+          "value": 1
+        },
+        {
+          "name": "Niños y Adolescentes (NNA)",
+          "value": 1
+        },
+        {
+          "name": "Pueblos indígenas",
+          "value": 1
+        },
+        {
+          "name": "Juventudes",
+          "value": 1
+        },
+        {
+          "name": "Mujeres",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Nivel de influencia",
+      "children": [
+        {
+          "name": "colectivo",
+          "value": 1
+        },
+        {
+          "name": "colectivo",
+          "value": 1
+        },
+        {
+          "name": "individual",
+          "value": 1
+        },
+        {
+          "name": "colectivo",
+          "value": 1
+        },
+        {
+          "name": "individual",
+          "value": 1
+        },
+        {
+          "name": "colectivo",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "ODS",
+      "children": [
+        {
+          "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 17.- Alianzas para lograr los objetivos",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 14.- Vida submarina",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 3.- Salud y Bienestar",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 5.- Igualdad de Género",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 6.- Agua y Saneamiento",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 11.- Ciudades y Comunidades sostenibles",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 8.- Trabajo decente y crecimiento económico",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 12.- Producción y consumo responsables",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 4.- Educación de calidad",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 1 .- Fin de la Pobreza",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 2.- Hambre Cero",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 5.- Igualdad de Género",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 10.- Reducción de las desigualdade",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 11.- Ciudades y Comunidades sostenibles",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 12.- Producción y consumo responsables",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 13.- Acción por el clima",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 1 .- Fin de la Pobreza",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 2.- Hambre Cero",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 3.- Salud y Bienestar",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 5.- Igualdad de Género",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 8.- Trabajo decente y crecimiento económico",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 10.- Reducción de las desigualdade",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 12.- Producción y consumo responsables",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 13.- Acción por el clima",
+          "value": 1
+        },
+        {
+          "name": "Objetivo 17.- Alianzas para lograr los objetivos",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Objetivo de incidencia",
+      "children": [
+        {
+          "name": "Fortalecer Capacidades técnicas y organizativas de organizaciones para realizar accines que onterfieran la deforestación",
+          "value": 1
+        },
+        {
+          "name": "Promover la participación de los ejidatarios en la actualizacion de los reglamentos internos con funcionariosd e Proc. Agraria",
+          "value": 1
+        },
+        {
+          "name": "Incidir en las instacias regularorias de importacion y uso de plaguicidas",
+          "value": 1
+        },
+        {
+          "name": "explicación clara a los productores en el tema de los puntos de monitoreo y establecimiento de vedas",
+          "value": 1
+        },
+        {
+          "name": "Preservación y regeneración de los ecosistemas",
+          "value": 1
+        },
+        {
+          "name": "Equidad ambiental",
+          "value": 1
+        },
+        {
+          "name": "Resilencia ambiental al cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Buen-vivir",
+          "value": 1
+        },
+        {
+          "name": "Estrategias de co-creación",
+          "value": 1
+        },
+        {
+          "name": "Identidad y regeneración cultural del Pueblo Totonaca",
+          "value": 1
+        },
+        {
+          "name": "Conservación biofísica y arqueológica",
+          "value": 1
+        },
+        {
+          "name": "Mejorar conocimiento de mercado y establecimiento de relaciones de confianza de empresas sociales de comercio justo orgánico con segmentos de clientes de cafeterías dirigidas a millenials y Generación Z",
+          "value": 1
+        },
+        {
+          "name": "Diseño",
+          "value": 1
+        },
+        {
+          "name": "implementación y promoción de sistema de producción",
+          "value": 1
+        },
+        {
+          "name": "transformación y consumo justo y sustentable de café en México",
+          "value": 1
+        },
+        {
+          "name": "Continuidad y mejoramiento de política pública de Investigación con incidencia",
+          "value": 1
+        },
+        {
+          "name": "Diseño de planes de adaptación",
+          "value": 1
+        },
+        {
+          "name": "establecimiento de alianzas",
+          "value": 1
+        },
+        {
+          "name": "consecusión de financiamiento",
+          "value": 1
+        },
+        {
+          "name": "implementación de capacitación para atender la problemática que se genera en las zonas cafetaleras por la influencia del cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Lecciones aprendidas sobre adaptación al cambio climático en zonas cafetaleras que pueden impulsarse como política pública",
+          "value": 1
+        },
+        {
+          "name": "Diseminación de resultados",
+          "value": 1
+        },
+        {
+          "name": "adaptación y apropiación de tecnología para mejorar la sustentabilidad y la equidad en los territorios cafetaleros",
+          "value": 1
+        },
+        {
+          "name": "Lecciones aprendidas sobre diseminación de resultados",
+          "value": 1
+        },
+        {
+          "name": "adaptación y apropiación de tecnología para mejorar sustentabilidad y equidad en los territorios cafetaleros que puedan impulsarse como política pública",
+          "value": 1
+        },
+        {
+          "name": "Promoción del consumo de café sustentable producido por pequeños productores en el mercado nacional",
+          "value": 1
+        },
+        {
+          "name": "adaptación y apropiación de propuestas organizativas y de seguridad alimentaria para mejorar el capital social y la alimentación en los territorios cafetaleros",
+          "value": 1
+        },
+        {
+          "name": "Lecciones aprendidas sobre resultados",
+          "value": 1
+        },
+        {
+          "name": "adaptación y apropiación de propuestas organizativas y de seguridad alimentaria para mejorar el capital social y la alimentación en los territorios cafetaleros que puedan impulsarse como política pública",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Problemáticas",
+      "children": [
+        {
+          "name": "Deforestación",
+          "value": 1
+        },
+        {
+          "name": "Venta de Tierras ejidales",
+          "value": 1
+        },
+        {
+          "name": "Uso de plaguicidas altamente peligrosos (PAPs)",
+          "value": 1
+        },
+        {
+          "name": "Muerte de abejas",
+          "value": 1
+        },
+        {
+          "name": "Siembra de cultivos GM",
+          "value": 1
+        },
+        {
+          "name": "vedas sanitarias",
+          "value": 1
+        },
+        {
+          "name": "impacto económico",
+          "value": 1
+        },
+        {
+          "name": "fronteras internacionales",
+          "value": 1
+        },
+        {
+          "name": "Tráfico de especies en peligro de extinción Totoaba",
+          "value": 1
+        },
+        {
+          "name": "Conflictividad",
+          "value": 1
+        },
+        {
+          "name": "Turismo",
+          "value": 1
+        },
+        {
+          "name": "Impacto ambiental",
+          "value": 1
+        },
+        {
+          "name": "Agua potable",
+          "value": 1
+        },
+        {
+          "name": "Impacto en la vida silvestre",
+          "value": 1
+        },
+        {
+          "name": "Salud humana",
+          "value": 1
+        },
+        {
+          "name": "Salud animal",
+          "value": 1
+        },
+        {
+          "name": "Degradación extrema del ecosistema",
+          "value": 1
+        },
+        {
+          "name": "Deforestación extrema",
+          "value": 1
+        },
+        {
+          "name": "Pérdida de fauna",
+          "value": 1
+        },
+        {
+          "name": "Contaminación de agua por materia orgánica",
+          "value": 1
+        },
+        {
+          "name": "Contaminación de agua por plaguicidas",
+          "value": 1
+        },
+        {
+          "name": "Contaminación de agua por hidrocarburos",
+          "value": 1
+        },
+        {
+          "name": "Pérdida de fertilidad de suelo",
+          "value": 1
+        },
+        {
+          "name": "Erosión cultural",
+          "value": 1
+        },
+        {
+          "name": "Falta de involucramiento de los jóvenes",
+          "value": 1
+        },
+        {
+          "name": "Debilitamiento identidad totonaca",
+          "value": 1
+        },
+        {
+          "name": "Erosión de la cohesión social",
+          "value": 1
+        },
+        {
+          "name": "Disminución de rezanderos",
+          "value": 1
+        },
+        {
+          "name": "Desfase entre politicas federal",
+          "value": 1
+        },
+        {
+          "name": "regional y local",
+          "value": 1
+        },
+        {
+          "name": "Falta de vinculo con politicas globales",
+          "value": 1
+        },
+        {
+          "name": "Turismo masivo",
+          "value": 1
+        },
+        {
+          "name": "Intermediarios de productores",
+          "value": 1
+        },
+        {
+          "name": "Problema de gobernanza",
+          "value": 1
+        },
+        {
+          "name": "Violencia intrafamiliar",
+          "value": 1
+        },
+        {
+          "name": "género",
+          "value": 1
+        },
+        {
+          "name": "Pérdida conocimiento producción vainilla",
+          "value": 1
+        },
+        {
+          "name": "Abandono del campo",
+          "value": 1
+        },
+        {
+          "name": "Crisis ecosistémico en los desiertos de México causado por el auge mezcalero en los últimos 10 años",
+          "value": 1
+        },
+        {
+          "name": "Falta de distribución de la riqueza económica producida con el auge mezcalero en México",
+          "value": 1
+        },
+        {
+          "name": "Cambio de modelo agrícola",
+          "value": 1
+        },
+        {
+          "name": "Manejo y aprovechamiento del agua",
+          "value": 1
+        },
+        {
+          "name": "Deforestación",
+          "value": 1
+        },
+        {
+          "name": "Desarrollo de obras",
+          "value": 1
+        },
+        {
+          "name": "organización social",
+          "value": 1
+        },
+        {
+          "name": "tenencia de la tierra",
+          "value": 1
+        },
+        {
+          "name": "Modelo Educativo",
+          "value": 1
+        },
+        {
+          "name": "Deterioro suelos",
+          "value": 1
+        },
+        {
+          "name": "Ataque plagas y enfermedades",
+          "value": 1
+        },
+        {
+          "name": "Precarias condiciones productivas",
+          "value": 1
+        },
+        {
+          "name": "Impactos cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Reducción rendimientos",
+          "value": 1
+        },
+        {
+          "name": "Insertidumbre en precios",
+          "value": 1
+        },
+        {
+          "name": "Desempleo",
+          "value": 1
+        },
+        {
+          "name": "Falta de inclusión jóvenes y mujeres",
+          "value": 1
+        },
+        {
+          "name": "Exceso carga trabajo mujeres",
+          "value": 1
+        },
+        {
+          "name": "Escasa apropiación de valor familias cafetaleras",
+          "value": 1
+        },
+        {
+          "name": "Reducción áreas de cultivo",
+          "value": 1
+        },
+        {
+          "name": "Incremento áreas cultivadas café",
+          "value": 1
+        },
+        {
+          "name": "Disminución áreas cultivadas maíz",
+          "value": 1
+        },
+        {
+          "name": "Dependencia productos industrializados",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Productos de difusión y diseminación",
+      "children": [
+        {
+          "name": "Mapas e infografias",
+          "value": 1
+        },
+        {
+          "name": "Infografias",
+          "value": 1
+        },
+        {
+          "name": "Documentos normativos",
+          "value": 1
+        },
+        {
+          "name": "https:",
+          "value": 1
+        },
+        {
+          "name": "www.facebook.com",
+          "value": 1
+        },
+        {
+          "name": "FanMarearoja",
+          "value": 1
+        },
+        {
+          "name": "www.instagram.com",
+          "value": 1
+        },
+        {
+          "name": "fanmarearoja",
+          "value": 1
+        },
+        {
+          "name": "twitter.com",
+          "value": 1
+        },
+        {
+          "name": "Talleres comunitarios",
+          "value": 1
+        },
+        {
+          "name": "Artículos de divulgación",
+          "value": 1
+        },
+        {
+          "name": "www.youtube.com",
+          "value": 1
+        },
+        {
+          "name": "@FanMarearoja",
+          "value": 1
+        },
+        {
+          "name": "about",
+          "value": 1
+        },
+        {
+          "name": "Talleres de capacitación",
+          "value": 1
+        },
+        {
+          "name": "Artículos científicos",
+          "value": 1
+        },
+        {
+          "name": "Tesis de maestría",
+          "value": 1
+        },
+        {
+          "name": "Tesis de doctorado",
+          "value": 1
+        },
+        {
+          "name": "Tesis de licenciatura",
+          "value": 1
+        },
+        {
+          "name": "Servicio social",
+          "value": 1
+        },
+        {
+          "name": "Conversatorios",
+          "value": 1
+        },
+        {
+          "name": "Platicas dirigidas a diversos sectores involucrados",
+          "value": 1
+        },
+        {
+          "name": "Asambleas",
+          "value": 1
+        },
+        {
+          "name": "Talleres",
+          "value": 1
+        },
+        {
+          "name": "Artículo difusión",
+          "value": 1
+        },
+        {
+          "name": "https:",
+          "value": 1
+        },
+        {
+          "name": "www.herpetologiamexicana.org",
+          "value": 1
+        },
+        {
+          "name": "wp-content",
+          "value": 1
+        },
+        {
+          "name": "uploads",
+          "value": 1
+        },
+        {
+          "name": "2022",
+          "value": 1
+        },
+        {
+          "name": "11",
+          "value": 1
+        },
+        {
+          "name": "HM_2022_4_1-25.pdf",
+          "value": 1
+        },
+        {
+          "name": "Infografías",
+          "value": 1
+        },
+        {
+          "name": "Redes sociales",
+          "value": 1
+        },
+        {
+          "name": "En construcción: https:",
+          "value": 1
+        },
+        {
+          "name": "www.facebook.com",
+          "value": 1
+        },
+        {
+          "name": "profile.php?id=100083785639367&mibextid=ZbWKwL",
+          "value": 1
+        },
+        {
+          "name": "twitter.com",
+          "value": 1
+        },
+        {
+          "name": "nuestro_katuwan?t=h45Eb50w19XnlZyz69mflQ&s=09",
+          "value": 1
+        },
+        {
+          "name": "Crear categorías para agruparlos identificarlos (medios digitales",
+          "value": 1
+        },
+        {
+          "name": "formación) identificar capacidades en los proyectos",
+          "value": 1
+        },
+        {
+          "name": "Diplomado",
+          "value": 1
+        },
+        {
+          "name": "Plan participativo para la acción contra el cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Manual para diseminación de la estrategia",
+          "value": 1
+        },
+        {
+          "name": "Red de actores para ejecución del plan de acción contra el cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Teatro guiñol Seguridad alimentaria",
+          "value": 1
+        },
+        {
+          "name": "Teatro participativo ¿Quién paga por detener el cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Actualización de redes sociales de empresas sociales participantes con contenidos generados en el programa",
+          "value": 1
+        },
+        {
+          "name": "Generación de capacidades para producir materiales de comunicación digital en las empresas sociales participantes",
+          "value": 1
+        },
+        {
+          "name": "Red de colaboración en la que participen empresas sociales y cafeterías dirigidas a millenias y generación Z",
+          "value": 1
+        },
+        {
+          "name": "10 Manuales para la difusión de las lecciones aprendidas",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Regiones de México",
+      "children": [
+        {
+          "name": "Región Sureste",
+          "value": 1
+        },
+        {
+          "name": "Región Noroeste",
+          "value": 1
+        },
+        {
+          "name": "Región Oriente",
+          "value": 1
+        },
+        {
+          "name": "Región Centronorte",
+          "value": 1
+        },
+        {
+          "name": "Región Sureste",
+          "value": 1
+        },
+        {
+          "name": "Región Sureste",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Sector",
+      "children": [
+        {
+          "name": "Social",
+          "value": 1
+        },
+        {
+          "name": "Público",
+          "value": 1
+        },
+        {
+          "name": "gubernamental",
+          "value": 1
+        },
+        {
+          "name": "Público",
+          "value": 1
+        },
+        {
+          "name": "gubernamental",
+          "value": 1
+        },
+        {
+          "name": "Académico",
+          "value": 1
+        },
+        {
+          "name": "Privado",
+          "value": 1
+        },
+        {
+          "name": "empresarial",
+          "value": 1
+        },
+        {
+          "name": "Social",
+          "value": 1
+        },
+        {
+          "name": "Social",
+          "value": 1
+        },
+        {
+          "name": "Académico",
+          "value": 1
+        },
+        {
+          "name": "Impulso del cultivo tradicional de vainilla",
+          "value": 1
+        },
+        {
+          "name": "Impulso meliponicultura",
+          "value": 1
+        },
+        {
+          "name": "Modelo educación totonaca",
+          "value": 1
+        },
+        {
+          "name": "Privado",
+          "value": 1
+        },
+        {
+          "name": "empresarial",
+          "value": 1
+        },
+        {
+          "name": "Académico",
+          "value": 1
+        },
+        {
+          "name": "Usos alternativos de plantas",
+          "value": 1
+        },
+        {
+          "name": "animales y hongos",
+          "value": 1
+        },
+        {
+          "name": "Alimentación con recursos locales",
+          "value": 1
+        },
+        {
+          "name": "Privado",
+          "value": 1
+        },
+        {
+          "name": "empresarial",
+          "value": 1
+        },
+        {
+          "name": "Social",
+          "value": 1
+        },
+        {
+          "name": "Público",
+          "value": 1
+        },
+        {
+          "name": "gubernamental",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Servicios y productos",
+      "children": [
+        {
+          "name": "Polinización y Miel",
+          "value": 1
+        },
+        {
+          "name": "Sistema de Alerta Temprana (predicción",
+          "value": 1
+        },
+        {
+          "name": "respuesta y prevención)",
+          "value": 1
+        },
+        {
+          "name": "Políticas públicas",
+          "value": 1
+        },
+        {
+          "name": "Educación comunitaria sobre la problemática",
+          "value": 1
+        },
+        {
+          "name": "Vainilla",
+          "value": 1
+        },
+        {
+          "name": "Miel",
+          "value": 1
+        },
+        {
+          "name": "Artesanías",
+          "value": 1
+        },
+        {
+          "name": "Seguridad alimentaria",
+          "value": 1
+        },
+        {
+          "name": "Prevención en la salud",
+          "value": 1
+        },
+        {
+          "name": "Educación ambiental",
+          "value": 1
+        },
+        {
+          "name": "Equidad ambiental",
+          "value": 1
+        },
+        {
+          "name": "Sistema de mejoramiento de áreas de venta y promoción de empresas sociales cafetaleras de comercio justo",
+          "value": 1
+        },
+        {
+          "name": "Atlas de calidades de Café en México",
+          "value": 1
+        },
+        {
+          "name": "Chatbot producción sustentable de cafés de especialidad",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Temáticas ambientales",
+      "children": [
+        {
+          "name": "Polinización",
+          "value": 1
+        },
+        {
+          "name": "Plaguicidas y OGM",
+          "value": 1
+        },
+        {
+          "name": "Deforestación",
+          "value": 1
+        },
+        {
+          "name": "Alternativas al uso Y prohibición de plaguicidas (PAPs)",
+          "value": 1
+        },
+        {
+          "name": "Mortandad masiva de organismos marinos",
+          "value": 1
+        },
+        {
+          "name": "Degradación de la calidad del agua",
+          "value": 1
+        },
+        {
+          "name": "Respuesta al cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Perdida de recursos y su calidad",
+          "value": 1
+        },
+        {
+          "name": "Restauración socioecológica",
+          "value": 1
+        },
+        {
+          "name": "Erosión en el conocimiento del uso de recursos naturales",
+          "value": 1
+        },
+        {
+          "name": "Perdida",
+          "value": 1
+        },
+        {
+          "name": "degradación y contaminación de habitats",
+          "value": 1
+        },
+        {
+          "name": "Sistemas agroforestales",
+          "value": 1
+        },
+        {
+          "name": "Cambio climático",
+          "value": 1
+        },
+        {
+          "name": "Buenas prácticas productivas",
+          "value": 1
+        },
+        {
+          "name": "Diversificación productiva",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Temáticas económicas",
+      "children": [
+        {
+          "name": "Valoracion economica de la miel y la polinización",
+          "value": 1
+        },
+        {
+          "name": "Blindar la venta de tierras ejidales",
+          "value": 1
+        },
+        {
+          "name": "falta de confianza de los productores a las autoridades por el establecimiento de vedas",
+          "value": 1
+        },
+        {
+          "name": "Prohibición del comercio de exportación especies bivalvos durante vedas sanitarias",
+          "value": 1
+        },
+        {
+          "name": "Impacto en el turismo restaurantero",
+          "value": 1
+        },
+        {
+          "name": "Mortandades masiva en acuacultura",
+          "value": 1
+        },
+        {
+          "name": "Costos de producción",
+          "value": 1
+        },
+        {
+          "name": "Falta autonomía económica",
+          "value": 1
+        },
+        {
+          "name": "Costo de satisfactores básicos.",
+          "value": 1
+        },
+        {
+          "name": "Falta de mercados",
+          "value": 1
+        },
+        {
+          "name": "Coyotaje",
+          "value": 1
+        },
+        {
+          "name": "Mercado nacional de café",
+          "value": 1
+        },
+        {
+          "name": "Buenas prácticas productivas",
+          "value": 1
+        },
+        {
+          "name": "Diversificación productiva",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Temáticas sociales (incluir las de salud)",
+      "children": [
+        {
+          "name": "Fortalecimiento Organizativo",
+          "value": 1
+        },
+        {
+          "name": "Actualizar reglamentos internos en ejidos",
+          "value": 1
+        },
+        {
+          "name": "Salud humana",
+          "value": 1
+        },
+        {
+          "name": "y de biodiversidad",
+          "value": 1
+        },
+        {
+          "name": "Intoxicación por consumo de organismos marinos contaminados por biotoxinas",
+          "value": 1
+        },
+        {
+          "name": "Protocolo de atención del sector salud ante intoxicación por consumo de organismos contaminados por biotoxinas",
+          "value": 1
+        },
+        {
+          "name": "Atención a vedas sanitarias",
+          "value": 1
+        },
+        {
+          "name": "Limitación de la producción de agua potable",
+          "value": 1
+        },
+        {
+          "name": "Monitoreo del área de alimentación del tiburon ballena",
+          "value": 1
+        },
+        {
+          "name": "Atención a acuacultores",
+          "value": 1
+        },
+        {
+          "name": "Baja resiliencia a cambio climatico",
+          "value": 1
+        },
+        {
+          "name": "Falta acceso al agua",
+          "value": 1
+        },
+        {
+          "name": "Vulnerabilidad ambiental",
+          "value": 1
+        },
+        {
+          "name": "Disminución producción de alimentos",
+          "value": 1
+        },
+        {
+          "name": "Pérdida de conocimientos ancestrales",
+          "value": 1
+        },
+        {
+          "name": "Desinterés de los jóvenes en las tradiciones de sus comunidades",
+          "value": 1
+        },
+        {
+          "name": "Cambios de usos y costumbres",
+          "value": 1
+        },
+        {
+          "name": "Adopción de nuevos esquemas de alimentación y desarrollo humano",
+          "value": 1
+        },
+        {
+          "name": "Falta de equidad ambiental",
+          "value": 1
+        },
+        {
+          "name": "Erosión cultural",
+          "value": 1
+        },
+        {
+          "name": "Autosuficiencia alimentaria",
+          "value": 1
+        },
+        {
+          "name": "Inclusión de mujeres y jóvenes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Territorio / Ecosistema",
+      "children": [
+        {
+          "name": "Selva Maya",
+          "value": 1
+        },
+        {
+          "name": "Zona costera",
+          "value": 1
+        },
+        {
+          "name": "comunidades costeras",
+          "value": 1
+        },
+        {
+          "name": "Alto Golfo de caliifornia",
+          "value": 1
+        },
+        {
+          "name": "Delta del Rio Colorado",
+          "value": 1
+        },
+        {
+          "name": "Bahía de los Ángeles",
+          "value": 1
+        },
+        {
+          "name": "San Felipe",
+          "value": 1
+        },
+        {
+          "name": "Ensenada",
+          "value": 1
+        },
+        {
+          "name": "San Quintín",
+          "value": 1
+        },
+        {
+          "name": "Tijuana",
+          "value": 1
+        },
+        {
+          "name": "Bahía de La Paz",
+          "value": 1
+        },
+        {
+          "name": "Bahía Magdalena",
+          "value": 1
+        },
+        {
+          "name": "Punta Abreojos",
+          "value": 1
+        },
+        {
+          "name": "Bahía Vizcaíno",
+          "value": 1
+        },
+        {
+          "name": "Papantla",
+          "value": 1
+        },
+        {
+          "name": "Coatzintla",
+          "value": 1
+        },
+        {
+          "name": "Totonaca",
+          "value": 1
+        },
+        {
+          "name": "Selva mediana (vegetación secundaria)",
+          "value": 1
+        },
+        {
+          "name": "Desierto",
+          "value": 1
+        },
+        {
+          "name": "Agroecosistemas",
+          "value": 1
+        },
+        {
+          "name": "zona urbana",
+          "value": 1
+        },
+        {
+          "name": "periurbana",
+          "value": 1
+        },
+        {
+          "name": "bosques sierra nevada",
+          "value": 1
+        },
+        {
+          "name": "Zona Lacustre",
+          "value": 1
+        },
+        {
+          "name": "Toda la cuenca del Lago de Texcoco",
+          "value": 1
+        },
+        {
+          "name": "toda la cuenca del Lago de Texcoco",
+          "value": 1
+        },
+        {
+          "name": "Bosques mesófilos",
+          "value": 1
+        },
+        {
+          "name": "Selvas medianas",
+          "value": 1
+        },
+        {
+          "name": "Territorios cafetales en Chiapas",
+          "value": 1
+        },
+        {
+          "name": "Oaxaca y Veracruz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tipo de actor",
+      "children": [
+        {
+          "name": "Preponderantes aliados",
+          "value": 1
+        },
+        {
+          "name": "Colaboradores",
+          "value": 1
+        },
+        {
+          "name": "Preponderantes aliados",
+          "value": 1
+        },
+        {
+          "name": "Para la gobernanza",
+          "value": 1
+        },
+        {
+          "name": "Colaboradores",
+          "value": 1
+        },
+        {
+          "name": "Preponderantes antagónicos",
+          "value": 1
+        },
+        {
+          "name": "Preponderantes aliados",
+          "value": 1
+        },
+        {
+          "name": "Colaboradores",
+          "value": 1
+        },
+        {
+          "name": "Colaboradores",
+          "value": 1
+        },
+        {
+          "name": "Preponderantes antagónicos",
+          "value": 1
+        },
+        {
+          "name": "Preponderantes aliados",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ámbito de influencia",
+      "children": [
+        {
+          "name": "Comunitario",
+          "value": 1
+        },
+        {
+          "name": "Nacional",
+          "value": 1
+        },
+        {
+          "name": "Nacional",
+          "value": 1
+        },
+        {
+          "name": "Estatal",
+          "value": 1
+        },
+        {
+          "name": "Regional",
+          "value": 1
+        },
+        {
+          "name": "Local",
+          "value": 1
+        },
+        {
+          "name": "Comunitario",
+          "value": 1
+        },
+        {
+          "name": "Regional",
+          "value": 1
+        },
+        {
+          "name": "Local",
+          "value": 1
+        },
+        {
+          "name": "Nacional",
+          "value": 1
+        },
+        {
+          "name": "Internacionacional",
+          "value": 1
+        },
+        {
+          "name": "Estatal",
+          "value": 1
+        },
+        {
+          "name": "Nacional",
+          "value": 1
+        },
+        {
+          "name": "Estatal",
+          "value": 1
+        },
+        {
+          "name": "Regional",
+          "value": 1
+        },
+        {
+          "name": "Internacionacional",
+          "value": 1
+        },
+        {
+          "name": "Comunitario",
+          "value": 1
+        },
+        {
+          "name": "Local",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Enfoque de genero (Por ejemplo, el papel de las mujeres en la toma de decisiones)",
+      "children": [
+        {
+          "name": "Economía familiar",
+          "value": 1
+        },
+        {
+          "name": "Pescadoras",
+          "value": 1
+        },
+        {
+          "name": "lineas de producción",
+          "value": 1
+        },
+        {
+          "name": "Equidad",
+          "value": 1
+        },
+        {
+          "name": "Intergeneracional",
+          "value": 1
+        },
+        {
+          "name": "en equidad",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Valores de interés",
+      "children": [
+        {
+          "name": "Confianza",
+          "value": 1
+        },
+        {
+          "name": "Compromiso",
+          "value": 1
+        },
+        {
+          "name": "Comunidad",
+          "value": 1
+        },
+        {
+          "name": "Orgullo",
+          "value": 1
+        },
+        {
+          "name": "Responsabilidad",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}
