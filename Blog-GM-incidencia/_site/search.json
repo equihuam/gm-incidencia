@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Blog-GM-incidencia",
     "section": "",
-    "text": "Googledrive SQLite\n\n\n\n\n\n\n\n\n\n\n\n\n1 jun 2023\n\n\n\n\n\n\n  \n\n\n\n\nGrupo Motor Incidencia\n\n\nDatos Atlas y Catálogo\n\n\n\n\n\n\n\n\n\n1 mar 2023\n\n\n\n\n\n\n  \n\n\n\n\nAtlas Socioecológico\n\n\n\n\n\n\n\nnoticias\n\n\n\n\n\n\n\n\n\n\n\n1 ene 2023\n\n\nMiguel Equihua\n\n\n\n\n\n\nNo hay resultados"
+    "text": "Old Faithful\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGoogledrive SQLite\n\n\n\n\n\n\n\n\n\n\n\n\n1 jun 2023\n\n\n\n\n\n\n  \n\n\n\n\nGrupo Motor Incidencia\n\n\nDatos Atlas y Catálogo\n\n\n\n\n\n\n\n\n\n1 mar 2023\n\n\n\n\n\n\n  \n\n\n\n\nAtlas Socioecológico\n\n\n\n\n\n\n\nnoticias\n\n\n\n\n\n\n\n\n\n\n\n1 ene 2023\n\n\nMiguel Equihua\n\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "posts/atlas/index.html",
@@ -82,5 +82,12 @@
     "title": "Blog-GM-incidencia",
     "section": "",
     "text": "classDiagram direction BT class conceptos { text tema text concepto integer id_tema integer id } class drive_files { text _parent text _owner text lastModifyingUser text kind integer copyRequiresWriterPermission integer writersCanShare integer viewedByMe text mimeType text parents text iconLink integer shared text webViewLink integer viewersCanCopyContent integer hasThumbnail text spaces text name integer starred integer trashed integer explicitlyTrashed text createdTime text modifiedTime text quotaBytesUsed text version integer ownedByMe integer isAppAuthorized text thumbnailVersion integer modifiedByMe text linkShareMetadata text id } class drive_folders { text _parent text _owner text lastModifyingUser text kind text name text mimeType integer starred integer trashed integer explicitlyTrashed text spaces text version text webViewLink text iconLink integer hasThumbnail text thumbnailVersion integer viewedByMe text createdTime text modifiedTime integer modifiedByMe integer shared integer ownedByMe integer viewersCanCopyContent integer copyRequiresWriterPermission integer writersCanShare text folderColorRgb text quotaBytesUsed integer isAppAuthorized text linkShareMetadata text parents text id } class drive_users { text kind text displayName text photoLink integer me text emailAddress text permissionId } class tema_doc { text id_doc integer id_tema }\nconceptos –&gt; conceptos : id_tema:id drive_files –&gt; drive_folders : _parent:id drive_files –&gt; drive_users : lastModifyingUser:permissionId drive_files –&gt; drive_users : _owner:permissionId drive_folders –&gt; drive_folders : _parent:id drive_folders –&gt; drive_users : _owner:permissionId drive_folders –&gt; drive_users : lastModifyingUser:permissionId tema_doc –&gt; conceptos : id_tema:id tema_doc –&gt; drive_files : id_doc:id"
+  },
+  {
+    "objectID": "posts/gs-sqlite-contenido/test-shiny.html",
+    "href": "posts/gs-sqlite-contenido/test-shiny.html",
+    "title": "Old Faithful",
+    "section": "",
+    "text": "── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nNumber of bins:"
   }
 ]
