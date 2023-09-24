@@ -78,3 +78,28 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
+
+library(tidyr)
+
+
+# Jerarquía de conceptos como Json 
+
+myfile <- 
+  conceptos %>%
+  select(tema, name = concepto, proyecto = id_p, value = id) %>% 
+  group_by(tema) %>% 
+  nest() %>% 
+  rename(children = data, name = tema) %>%
+  mutate(children = map(children, transpose))
+
+mydata <- jsonlite::toJSON(myfile, pretty = TRUE)
+write(mydata, "./posts/gs-sqlite-contenido/data/flare-3.json")
+
+
+nest_by(myfile$children, .key = "proyecto")
+
+
+test <- myfile %>% as_tibble %>% transpose()
+test_js <- jsonlite::toJSON(test, pretty = TRUE)
+

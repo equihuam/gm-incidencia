@@ -116,13 +116,13 @@ Hay algunas celdas que contienen varias ideas separadas por comas, otras las sep
 # Datos generales de las hojas
 hojas <- names(concept_hojas)
 hojas <- hojas[!grepl("Introducción", hojas)]
-print("Hojas procesadas:")
+#print("Hojas procesadas:")
 
 # Proceso las hojas individualmente
 for (hj in hojas) 
 {
   pronaii <- concept_hojas[[hj]]
-  print(paste0("    ", hj))
+#  print(paste0("    ", hj))
   
   # columnas en la hoja
   num_col <- length(names(pronaii))
@@ -182,11 +182,11 @@ kable(conceptos_w) %>%
   kableExtra::kable_classic()
 
 
-write_excel_csv(conceptos_w, "cubo_de_conceptos.csv", col_names = TRUE)
+#write_excel_csv(conceptos_w, "cubo_de_conceptos.csv", col_names = TRUE)
 
 ```
 
-```{r}
+```{r json, echo=FALSE, include=TRUE, eval=FALSE}
 
 top_level_val <- unique(conceptos$tema)
 nested_df <- unique(conceptos[c("tema", "concepto", "id_p", "id")])
