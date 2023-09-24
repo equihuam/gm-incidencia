@@ -1,0 +1,71 @@
+[
+  {
+    "PatientID": ["PID01"],
+    "PatientName": ["John Doe"],
+    "PatientGroup": ["Group A"],
+    "Encounters": [
+      {
+        "EncounterID": "Enc01",
+        "EncounterType": "Outpatient",
+        "ClaimLines": [
+          {
+            "RevCodes": ["001"],
+            "ClaimLine": [1]
+          },
+          {
+            "RevCodes": ["100"],
+            "ClaimLine": [2]
+          },
+          {
+            "RevCodes": ["200"],
+            "ClaimLine": [3]
+          },
+          {
+            "RevCodes": ["300"],
+            "ClaimLine": [4]
+          },
+          {
+            "RevCodes": ["400"],
+            "ClaimLine": [5]
+          }
+        ]
+      },
+      {
+        "EncounterID": "Enc02",
+        "EncounterType": "Outpatient",
+        "ClaimLines": {}
+      }
+    ]
+  },
+  {
+    "PatientID": ["PID02"],
+    "PatientName": ["Jane Doe"],
+    "PatientGroup": ["Group B"],
+    "Encounters": [
+      {
+        "EncounterID": "Enc03",
+        "EncounterType": "Inpatient",
+        "ClaimLines": {}
+      },
+      {
+        "EncounterID": "Enc04",
+        "EncounterType": "Outpatient",
+        "ClaimLines": [
+          {
+            "RevCodes": ["001"],
+            "ClaimLine": [1]
+          },
+          {
+            "RevCodes": ["100"],
+            "ClaimLine": [2]
+          }
+        ]
+      },
+      {
+        "EncounterID": "Enc05",
+        "EncounterType": "SNF",
+        "ClaimLines": {}
+      }
+    ]
+  }
+]
