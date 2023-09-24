@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+output: html_document
+date: "2023-08-30"
+---
+
+:::: {.columns}
+
+::: {.column}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+:::
+
+::: {.column}
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=-96.959538, lat=19.454307,
+    popup="The birthplace of R")
+m  # Print the map
+```
+
+:::
+
+::::
+
+19.454307, -96.959538
+
+19.450152, -96.958430
+19° 27', west longitude is 96° 58

@@ -1,0 +1,3000 @@
+{
+ "name": "temas",  
+    "children": [
+  {
+    "name": "Actores",
+    "children": [{
+        "name": "Apicultoras y Apicultores",
+        "children": [{"name": "Abejas 319105", "value": 1}],
+
+        "name": "Ejidatario (a)s",
+        "children": [{"name": "Abejas 319105", "value": 1}]
+      },
+      {
+        "name": "Apicultores",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "acedemicos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "funcionarios de gobierno",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "SEDATU",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "COEPRIS",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Academia",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "COFEPRIS",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "SEMAR",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "SEMARNAT",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Permisionarios locales",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Industria privada de maricultura",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Sociedad civil",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Sector salud",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Comisión Estatal de Servicios Públicos de Ensenada",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "CONANP",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Comunidades pesqueras",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Sector turistico",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Productores (acuacultores)",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Consejo Totonaco de Organizaciones y Comunidades",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Consejo Estatal de Productores de Vainilla Veracruzanos A.C.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Consejo para la Protección y Preservación de la Ceremonia Ritual de Voladores A.C.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Tsumat Artesanía Totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "UNAM",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Facultad de Ciencias",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Facultad de Ingenieria",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Instituto de Geología",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Institudo de Biología",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Universidad Libre de Bruselas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Bélgica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Dirección General de Divulgación de la Ciencia",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Universidad Veracruzana",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Itzeni A.C.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Universidad Autonoma del Estado de Hidalgo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Universidad Sueca de Ciencias Agrícolas (SLU)",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Instituto de Ecología",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Instituto de Investigaciones Económicas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "IRD",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "MNHN (Museo Nacional de Historia Natural)",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Paris",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Universidad Paris 8 Francia",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Soluciones Circulares A.C.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "INRAE",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Herpetología Mexicana",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Coco Tortuga A.C.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Productores Agrícolas Hermanos Flores S.P.R. de R.L. de C.V",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "El Colegio de la Frontera Sur (ECOSUR)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Instituto Nacional de Investigaciones Forestales",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Agrícolas y Pecuarias (INIFAP)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Instituto de Ecología A. C. (INECOL)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Universidad de Ciencias y Artes de Chiapas (UNICACH)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Universidad Autónoma Chapingo (UACH-CRUO)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "CAFECOL",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Coordinadora Latinoamericana y del Caribe de Pequeños(as) Productores(as) y Trabajadores(as) de Comercio Justo (CLAC)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Fondo para la Paz (FPP)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Campesinos Ecológicos de la Sierra Madre de Chiapas (CESMACH)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "OXFAM México",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Universidad Nacional Autónoma de México (UNAM)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Cholom Balá",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Unión Majomut",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "CEPCO",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Café Gourmet Sierra Azul",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Maya Vinic",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Comon Yaj Noptic",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "INCAFESAM",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Sociedad Civil Triunfo Verde",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Catuai Amarillo",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Yeni Navan",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Productores Sierra de Zongolica",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Unión de Comunidades Indígenas de la Región del Istmo (UCIRI)",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Consejo Consultivo de Cambio Climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Tseltal Tsotsil",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Fairtrade de Oaxaca y Chiapas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Instituto tecnológico de Huatusco",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "SADER",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "SEBIEN",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Secretaría de Economía",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Universidad Benito Juárez de Oaxaca",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Universidad Autónoma de Chiapas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "CONANP",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Cambios que se están buscando",
+    "children": [
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en alianza de saberes",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Normativos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Cocina Colaboratorio 319065 ",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Cocina Colaboratorio 319065 ",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Cocina Colaboratorio 319065 ",
+        "value": 1
+      },
+      {
+        "name": "Prevención en la población",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Aumento de la sustentabilidad costero",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de sustentabilidad y bienestar costero",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "indicadores de resultado",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Confirmación de la identificación morfológica y molecular de especies de dinoflagelados.",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Mitigación de los impactos en la población",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Catalogo de especies nocivas con secuencias de ADN de cepas regionales y detalles morfológicos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Efecto de FAN sobre organismos de importancia comercial",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Predicción de los eventos FAN",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Descripción de efectos nocivos de especies tóxicas en camarones",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Monitorear la zona de alimentación del tiburón ballena",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Listado de especies más abundantes en la zona y su variabilidad mensual",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Reforestación de importancia ecológica autóctona",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Reforestación con plantas de importancia cultural y ecológica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Abundancia de micorrizas en raíces terrestres secundarias",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Regeneración de habitats para la fauna",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Protección de fauna de valor cultural",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Abundancia de micorrizas en raíces terrestres primarias",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Conversión a sistemas agroforestal",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Reforestación con plantas de importancia ecológica autóctona en sistemas agroforestal",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Acumulación de especies herpetofaunísticas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Desarrollo de biofertilizante",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Reforestación con plantas de importancia ecológica autóctona",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Número de recursos turisticos convertidos en atractivos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Restauración ambiental de las zonas afectadas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Impulso del artesania local",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Acumulación de especies vegetales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Corredor biológico",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Red de semillas nativas entre productores",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Acumulación de mesofauna",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Banco de semillas de árboles nativos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Impulso de huertos familiares",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Lab Ganad 319075",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Lab Ganad 319075",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Lab Ganad 319075",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mantener fertilidad",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Incremento del valor del café para las familias que venden producto directamente en cafeterías",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mantener agrobiodiversidad",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Manejo holístico de plagas y enfermedades",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Adaptación basada en la Naturaleza",
+        "name": "Tren Maya 319113",
+        "value": 1
+      },
+      {
+        "name": "Soluciones basadas en el conocimiento indígena o local",
+        "name": "Tren Maya 319113",
+        "value": 1
+      },
+      {
+        "name": "Indicadores de resultado",
+        "name": "Tren Maya 319113",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Enfoque cultural /",
+    "children": [
+      {
+        "name": "Alianza de saberes",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "comunidades",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "cooperativas pesqueras",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Permisionarios para la extracción de almeja generosa",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Pescadores",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "productores",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "prestadores de servicios turísticos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Guardaparques",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Cosmovisión totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Usos y costumbres totonacos",
+        "name": "Katuwan 319054",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Enfoques",
+    "children": [
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Enfoque intergeneracional",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Perspectiva de género",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Enfoque intergeneracional",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Interculturalidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Perspectiva de género",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Sustentabilidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Transdisciplina",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Economía circular",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Respuesta a cambio climático",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Sistemas agroforestales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Buen vivir",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Gobernanza",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Valoración contingente",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Histeresis biocultural",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Enfoque intergeneracional",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Enfoque de sistemas socioecológicos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Enfoque intergeneracional",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Interculturalidad",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Perspectiva de género",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Interculturalidad",
+        "name": "Tren Maya 319113",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Estados / entidades de la República Mexicana",
+    "children": [
+      {
+        "name": "Campeche",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Yucatán",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Quintana Roo",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Baja California",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Baja California Sur",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Veracruz",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Chihuahua",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Sonora",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Durango",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Michoacán",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Guerrero",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Jalisco",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Puebla",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Oaxaca",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Querétaro",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "México",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Chiapas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Oaxaca",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Veracruz",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Yucatán",
+        "name": "Tren Maya 319113",
+        "value": 1
+      },
+      {
+        "name": "Chiapas",
+        "name": "Tren Maya 319113",
+        "value": 1
+      },
+      {
+        "name": "Campeche",
+        "name": "Tren Maya 319113",
+        "value": 1
+      },
+      {
+        "name": "Quintana Roo",
+        "name": "Tren Maya 319113",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Etnia o grupo indígena",
+    "children": [
+      {
+        "name": "Mayas",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Nahuas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Otomí",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Mayas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mixes",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Cuicatecos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mixtecos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Zapotecos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Nahuas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Chontales",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Chatinos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Chol",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mam",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Kaqchikel",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Zoque",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Chinanteco",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Inclusión de grupos poblacionales",
+    "children": [
+      {
+        "name": "Pueblos indígenas",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Niñas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Niños y Adolescentes (NNA)",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Mujeres",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Juventudes",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Personas adultas mayores",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Pueblos indígenas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Juventudes",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Mujeres",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Niñas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Niños y Adolescentes (NNA)",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Pueblos indígenas",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Juventudes",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Mujeres",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Nivel de influencia",
+    "children": [
+      {
+        "name": "colectivo",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "colectivo",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "individual",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "colectivo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "individual",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "colectivo",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "ODS",
+    "children": [
+      {
+        "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 17.- Alianzas para lograr los objetivos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 14.- Vida submarina",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 3.- Salud y Bienestar",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 5.- Igualdad de Género",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 6.- Agua y Saneamiento",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 11.- Ciudades y Comunidades sostenibles",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 8.- Trabajo decente y crecimiento económico",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 12.- Producción y consumo responsables",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 4.- Educación de calidad",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 1 .- Fin de la Pobreza",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 2.- Hambre Cero",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 5.- Igualdad de Género",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 10.- Reducción de las desigualdade",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 11.- Ciudades y Comunidades sostenibles",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 12.- Producción y consumo responsables",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 13.- Acción por el clima",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 15.- Vida de ecosistemas terrestres",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 1 .- Fin de la Pobreza",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 2.- Hambre Cero",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 3.- Salud y Bienestar",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 5.- Igualdad de Género",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 8.- Trabajo decente y crecimiento económico",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 10.- Reducción de las desigualdade",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 12.- Producción y consumo responsables",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 13.- Acción por el clima",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Objetivo 17.- Alianzas para lograr los objetivos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Objetivo de incidencia",
+    "children": [
+      {
+        "name": "Fortalecer Capacidades técnicas y organizativas de organizaciones para realizar accines que onterfieran la deforestación",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Promover la participación de los ejidatarios en la actualizacion de los reglamentos internos con funcionariosd e Proc. Agraria",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Incidir en las instacias regularorias de importacion y uso de plaguicidas",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "explicación clara a los productores en el tema de los puntos de monitoreo y establecimiento de vedas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Preservación y regeneración de los ecosistemas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Equidad ambiental",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Resilencia ambiental al cambio climático",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Buen-vivir",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Estrategias de co-creación",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Identidad y regeneración cultural del Pueblo Totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Conservación biofísica y arqueológica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Mejorar conocimiento de mercado y establecimiento de relaciones de confianza de empresas sociales de comercio justo orgánico con segmentos de clientes de cafeterías dirigidas a millenials y Generación Z",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diseño",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "implementación y promoción de sistema de producción",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "transformación y consumo justo y sustentable de café en México",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Continuidad y mejoramiento de política pública de Investigación con incidencia",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diseño de planes de adaptación",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "establecimiento de alianzas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "consecusión de financiamiento",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "implementación de capacitación para atender la problemática que se genera en las zonas cafetaleras por la influencia del cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Lecciones aprendidas sobre adaptación al cambio climático en zonas cafetaleras que pueden impulsarse como política pública",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diseminación de resultados",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "adaptación y apropiación de tecnología para mejorar la sustentabilidad y la equidad en los territorios cafetaleros",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Lecciones aprendidas sobre diseminación de resultados",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "adaptación y apropiación de tecnología para mejorar sustentabilidad y equidad en los territorios cafetaleros que puedan impulsarse como política pública",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Promoción del consumo de café sustentable producido por pequeños productores en el mercado nacional",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "adaptación y apropiación de propuestas organizativas y de seguridad alimentaria para mejorar el capital social y la alimentación en los territorios cafetaleros",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Lecciones aprendidas sobre resultados",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "adaptación y apropiación de propuestas organizativas y de seguridad alimentaria para mejorar el capital social y la alimentación en los territorios cafetaleros que puedan impulsarse como política pública",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Problemáticas",
+    "children": [
+      {
+        "name": "Deforestación",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Venta de Tierras ejidales",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Uso de plaguicidas altamente peligrosos (PAPs)",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Muerte de abejas",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Siembra de cultivos GM",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "vedas sanitarias",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "impacto económico",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "fronteras internacionales",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Tráfico de especies en peligro de extinción Totoaba",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Conflictividad",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Turismo",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Impacto ambiental",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Agua potable",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Impacto en la vida silvestre",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Salud humana",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Salud animal",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Degradación extrema del ecosistema",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Deforestación extrema",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Pérdida de fauna",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Contaminación de agua por materia orgánica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Contaminación de agua por plaguicidas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Contaminación de agua por hidrocarburos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Pérdida de fertilidad de suelo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Erosión cultural",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta de involucramiento de los jóvenes",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Debilitamiento identidad totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Erosión de la cohesión social",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Disminución de rezanderos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Desfase entre politicas federal",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "regional y local",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta de vinculo con politicas globales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Turismo masivo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Intermediarios de productores",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Problema de gobernanza",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Violencia intrafamiliar",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "género",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Pérdida conocimiento producción vainilla",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Abandono del campo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Crisis ecosistémico en los desiertos de México causado por el auge mezcalero en los últimos 10 años",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Falta de distribución de la riqueza económica producida con el auge mezcalero en México",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Cambio de modelo agrícola",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Manejo y aprovechamiento del agua",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Deforestación",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Desarrollo de obras",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "organización social",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "tenencia de la tierra",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Modelo Educativo",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Deterioro suelos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Ataque plagas y enfermedades",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Precarias condiciones productivas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Impactos cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Reducción rendimientos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Insertidumbre en precios",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Desempleo",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Falta de inclusión jóvenes y mujeres",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Exceso carga trabajo mujeres",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Escasa apropiación de valor familias cafetaleras",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Reducción áreas de cultivo",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Incremento áreas cultivadas café",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Disminución áreas cultivadas maíz",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Dependencia productos industrializados",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Productos de difusión y diseminación",
+    "children": [
+      {
+        "name": "Mapas e infografias",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Infografias",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Documentos normativos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "https:",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "www.facebook.com",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "FanMarearoja",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "www.instagram.com",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "fanmarearoja",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "twitter.com",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Talleres comunitarios",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Artículos de divulgación",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "www.youtube.com",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "@FanMarearoja",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "about",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Talleres de capacitación",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Artículos científicos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Tesis de maestría",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Tesis de doctorado",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Tesis de licenciatura",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Servicio social",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Conversatorios",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Platicas dirigidas a diversos sectores involucrados",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Asambleas",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Talleres",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Artículo difusión",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "https:",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "www.herpetologiamexicana.org",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "wp-content",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "uploads",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "2022",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "11",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "HM_2022_4_1-25.pdf",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Infografías",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Redes sociales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "En construcción: https:",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "www.facebook.com",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "profile.php?id=100083785639367&mibextid=ZbWKwL",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "twitter.com",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "nuestro_katuwan?t=h45Eb50w19XnlZyz69mflQ&s=09",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Crear categorías para agruparlos identificarlos (medios digitales",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "formación) identificar capacidades en los names",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diplomado",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Plan participativo para la acción contra el cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Manual para diseminación de la estrategia",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Red de actores para ejecución del plan de acción contra el cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Teatro guiñol Seguridad alimentaria",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Teatro participativo ¿Quién paga por detener el cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Actualización de redes sociales de empresas sociales participantes con contenidos generados en el programa",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Generación de capacidades para producir materiales de comunicación digital en las empresas sociales participantes",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Red de colaboración en la que participen empresas sociales y cafeterías dirigidas a millenias y generación Z",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "10 Manuales para la difusión de las lecciones aprendidas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Regiones de México",
+    "children": [
+      {
+        "name": "Región Sureste",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Región Noroeste",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Región Oriente",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Región Centronorte",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Región Sureste",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Región Sureste",
+        "name": "Tren Maya 319113",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Sector",
+    "children": [
+      {
+        "name": "Social",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Público",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "gubernamental",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Público",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "gubernamental",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Académico",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Privado",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "empresarial",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Social",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Social",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Académico",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Impulso del cultivo tradicional de vainilla",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Impulso meliponicultura",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Modelo educación totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Privado",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "empresarial",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Académico",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Usos alternativos de plantas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "animales y hongos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Alimentación con recursos locales",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Privado",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "empresarial",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Social",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Público",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "gubernamental",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Servicios y productos",
+    "children": [
+      {
+        "name": "Polinización y Miel",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Sistema de Alerta Temprana (predicción",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "respuesta y prevención)",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Políticas públicas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Educación comunitaria sobre la problemática",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Vainilla",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Miel",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Artesanías",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Seguridad alimentaria",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Prevención en la salud",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Educación ambiental",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Equidad ambiental",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Sistema de mejoramiento de áreas de venta y promoción de empresas sociales cafetaleras de comercio justo",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Atlas de calidades de Café en México",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Chatbot producción sustentable de cafés de especialidad",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Temáticas ambientales",
+    "children": [
+      {
+        "name": "Polinización",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Plaguicidas y OGM",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Deforestación",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Alternativas al uso Y prohibición de plaguicidas (PAPs)",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Mortandad masiva de organismos marinos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Degradación de la calidad del agua",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Respuesta al cambio climático",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Perdida de recursos y su calidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Restauración socioecológica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Erosión en el conocimiento del uso de recursos naturales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Perdida",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "degradación y contaminación de habitats",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Sistemas agroforestales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Cambio climático",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Buenas prácticas productivas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diversificación productiva",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Temáticas económicas",
+    "children": [
+      {
+        "name": "Valoracion economica de la miel y la polinización",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Blindar la venta de tierras ejidales",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "falta de confianza de los productores a las autoridades por el establecimiento de vedas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Prohibición del comercio de exportación especies bivalvos durante vedas sanitarias",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Impacto en el turismo restaurantero",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Mortandades masiva en acuacultura",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Costos de producción",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta autonomía económica",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Costo de satisfactores básicos.",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta de mercados",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Coyotaje",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Mercado nacional de café",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Buenas prácticas productivas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Diversificación productiva",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Temáticas sociales (incluir las de salud)",
+    "children": [
+      {
+        "name": "Fortalecimiento Organizativo",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Actualizar reglamentos internos en ejidos",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Salud humana",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "y de biodiversidad",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Intoxicación por consumo de organismos marinos contaminados por biotoxinas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Protocolo de atención del sector salud ante intoxicación por consumo de organismos contaminados por biotoxinas",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Atención a vedas sanitarias",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Limitación de la producción de agua potable",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Monitoreo del área de alimentación del tiburon ballena",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Atención a acuacultores",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Baja resiliencia a cambio climatico",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta acceso al agua",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Vulnerabilidad ambiental",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Disminución producción de alimentos",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Pérdida de conocimientos ancestrales",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Desinterés de los jóvenes en las tradiciones de sus comunidades",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Cambios de usos y costumbres",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Adopción de nuevos esquemas de alimentación y desarrollo humano",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Falta de equidad ambiental",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Erosión cultural",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Autosuficiencia alimentaria",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Inclusión de mujeres y jóvenes",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Territorio / Ecosistema",
+    "children": [
+      {
+        "name": "Selva Maya",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Zona costera",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "comunidades costeras",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Alto Golfo de caliifornia",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Delta del Rio Colorado",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Bahía de los Ángeles",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "San Felipe",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Ensenada",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "San Quintín",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Tijuana",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Bahía de La Paz",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Bahía Magdalena",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Punta Abreojos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Bahía Vizcaíno",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Papantla",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Coatzintla",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Totonaca",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Selva mediana (vegetación secundaria)",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Desierto",
+        "name": "Mezcal 319061",
+        "value": 1
+      },
+      {
+        "name": "Agroecosistemas",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "zona urbana",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "periurbana",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "bosques sierra nevada",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Zona Lacustre",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Toda la cuenca del Lago de Texcoco",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "toda la cuenca del Lago de Texcoco",
+        "name": "NAICM 319120",
+        "value": 1
+      },
+      {
+        "name": "Bosques mesófilos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Selvas medianas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Territorios cafetales en Chiapas",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Oaxaca y Veracruz",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Tipo de actor",
+    "children": [
+      {
+        "name": "Preponderantes aliados",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Colaboradores",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Preponderantes aliados",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Para la gobernanza",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Colaboradores",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Preponderantes antagónicos",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Preponderantes aliados",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Colaboradores",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Colaboradores",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Preponderantes antagónicos",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Preponderantes aliados",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Ámbito de influencia",
+    "children": [
+      {
+        "name": "Comunitario",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Nacional",
+        "name": "Abejas 319105",
+        "value": 1
+      },
+      {
+        "name": "Nacional",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Estatal",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Regional",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Local",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Comunitario",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Regional",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Local",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Nacional",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Internacionacional",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Estatal",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Nacional",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Estatal",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Regional",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Internacionacional",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Comunitario",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      },
+      {
+        "name": "Local",
+        "name": "Terr Cafet 319068",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Enfoque de genero (Por ejemplo, el papel de las mujeres en la toma de decisiones)",
+    "children": [
+      {
+        "name": "Economía familiar",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Pescadoras",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "lineas de producción",
+        "name": "Ejemplo FAN-319104",
+        "value": 1
+      },
+      {
+        "name": "Equidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Intergeneracional",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "en equidad",
+        "name": "Mezcal 319061",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Valores de interés",
+    "children": [
+      {
+        "name": "Confianza",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Compromiso",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Comunidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Orgullo",
+        "name": "Katuwan 319054",
+        "value": 1
+      },
+      {
+        "name": "Responsabilidad",
+        "name": "Katuwan 319054",
+        "value": 1
+      }
+    ]
+  }
+]
