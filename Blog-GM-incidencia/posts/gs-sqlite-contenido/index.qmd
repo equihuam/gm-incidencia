@@ -395,4 +395,4 @@ varmax = d3.max(stats.filter(d => d.date == 2019), d => +d[indicator])
 title = meta.map((d) => [d.indicator, d.shortcode]).find((d) => d[1] == indicator)[0] + " in " + year
 ```
 
-Puede apreciarse el efecto de tener frases relativamente largas para dar cuenta de los conceptos de interés. También es claro que la representación se beneficiaría de tener una jerarquía con más niveles. Hicimos un ejercicio para explorar la funcionalidad de estas ideas. \[El resultados está aquí\](http://datamarindo.baselinux.net:3838/sunburst/).
+Puede apreciarse el efecto de tener frases relativamente largas para dar cuenta de los conceptos de interés. También es claro que la representación se beneficiaría de tener una jerarquía con más niveles. Hicimos un ejercicio para explorar la funcionalidad de estas ideas. [El resultados está aquí](http://datamarindo.baselinux.net:3838/sunburst/).
