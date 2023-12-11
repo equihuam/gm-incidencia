@@ -50,7 +50,6 @@ con_datos <- dbConnect(drv = SQLite(), dbname = "atlas-y-cat.db")
 
 ```
 
-
 Ahora podemos ver la lista de tablas que tiene la base dde datos.
 
 ```{r}
@@ -59,6 +58,7 @@ Ahora podemos ver la lista de tablas que tiene la base dde datos.
 as.data.frame(dbListTables(con_datos))
 
 ```
+
 ¿Qué proyectos hay en el *atlas-catálogo*?
 
 ```{r}
@@ -84,4 +84,3 @@ dbReadTable(con_datos, "drive_folders") %>%
       filter(!is.na(name)) %>%
       kable(col.names = c("Proyecto", "Num docs"))
 ```
-
