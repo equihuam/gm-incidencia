@@ -1,0 +1,87 @@
+---
+title: "Catálogo de Productos en Google Drive"
+author: "Miguel Equihua"
+date: "2023-12-1"
+categories: [conceptos,herramientas]
+lang: es
+filters:
+  - interactive-sql
+databases:
+  - name: atlas-y-cat.db
+    path: "./"
+format:
+  html:
+    toc: true
+    toc-title: Contenido
+    code-fold: true
+---
+
+```{r inicio, warning=FALSE, include=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(googledrive))
+suppressPackageStartupMessages(library(googlesheets4))
+library(readxl)
+library(knitr)
+library(kableExtra)
+library(igraph)
+library(DBI)
+library(RSQLite)
+```
+
+Localiza el archivo SQLite **atlas-y-cat.db** y lo descarga para interactuar con los datos registrados
+
+```{r echo=FALSE, message=FALSE}
+# Autenticación genérica
+suppressMessages(drive_auth(email = TRUE))
+
+# localiza la carpeta PRONACES SSyS
+atlas_dir <- drive_find(n_max = 10, type = "folder", 
+                       pattern = "0-control-atlas-catalogo")
+
+# Contenido de la carpeta de Control del Atlas
+atlas_contet <- drive_ls(path = atlas_dir$id)
+drive_download(atlas_contet$id[1], "./atlas-y-cat.db", overwrite = TRUE)
+
+doc_interes <- atlas_contet$id[grepl("\\.db$", atlas_contet$name)]
+
+url_db <- paste0("https://drive.google.com/file/d/", doc_interes)
+
+con_datos <- dbConnect(drv = SQLite(), dbname = "atlas-y-cat.db")
+
+```
+
+
+Ahora podemos ver la lista de tablas que tiene la base dde datos.
+
+```{r}
+
+# Show List of Tables
+as.data.frame(dbListTables(con_datos))
+
+```
+¿Qué proyectos hay en el *atlas-catálogo*?
+
+```{r}
+# Get table
+dbReadTable(con_datos, 'drive_folders') %>% 
+  select(name, id) %>% 
+  filter(!(grepl("0-control|Materiales para", name))) %>% 
+  kable(col.names = c("Carpeta", "Google Drive id"))
+
+```
+
+Ahora, veamos cuántos documentos hay en cada uno de estos proyectos.
+
+```{r}
+dbReadTable(con_datos, "drive_folders") %>%
+      filter(!grepl("0-control|Materiales para", name)) %>%
+      select(id, name) %>% 
+      full_join(dbReadTable(con_datos, "drive_files"), 
+                 by = join_by(id == X_parent), suffix = c("", ".file")) %>% 
+      select(id, name, name.file) %>% 
+      group_by(name) %>% 
+      summarise(docs = sum(!is.na(name.file), na.rm = TRUE)) %>% 
+      filter(!is.na(name)) %>%
+      kable(col.names = c("Proyecto", "Num docs"))
+```
+
