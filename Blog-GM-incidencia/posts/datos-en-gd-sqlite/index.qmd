@@ -28,7 +28,7 @@ library(DBI)
 library(RSQLite)
 ```
 
-Localiza el archivo SQLite **atlas-y-cat.db** y lo descarga para interactuar con los datos registrados
+La aplicación para operar rutinaria y automáticamente con *Google Drive* para registrar en una base de datos *SQLite* los productos contenidos de los PPronaii ya está lista.
 
 ```{r echo=FALSE, message=FALSE}
 # Autenticación genérica
