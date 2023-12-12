@@ -23,8 +23,6 @@ databases:
 
 -->
 ```
-
-
 ```{r}
 #| label: inicio
 #| echo: false
@@ -45,45 +43,8 @@ library(reticulate)
 ```
 
 
-```{python}
-import atlas_cat
+La aplicación para operar rutinaria y automáticamente con Google Drive para registrar en una base de datos SQLite los productos contenidos de los Pronaii ya está lista.
 
-# Confidential information
-with open("privado/credenciales.json") as f:
-    credentials = json.load(f)
-credentials = {k: v for k, v in credentials["installed"].items()}
-with open("privado/directorio_a_procesar.json") as f:
-    credentials.update(json.load(f))
-
-DEFAULT_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
-GOOGLE_CLIENT_ID = credentials["client_id"]
-GOOGLE_CLIENT_SECRET = credentials["client_secret"]
-TARGET_FOLDER = credentials["target_folder"]
-CONTROL_FOLDER = credentials["control_folder"]
-
-#auth("authenticated.json", GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, DEFAULT_SCOPE)
-
-# If all is ready, this function scans Google Drive Folder and updates de SQLite file
-atlas_cat.files("atlas-y-cat.db", authenticated="authenticated.json", folder=TARGET_FOLDER,
-      q="",
-      full_text="",
-      starred=False,
-      trashed=False,
-      shared_with_me=False,
-      apps=True,
-      docs=False,
-      sheets=False,
-      presentations=False,
-      drawings=False,
-      json_="",
-      nl="",
-      stop_after=None,
-      import_json=False,
-      import_nl=False,
-      verbose=False)
-
-```
-Localiza el archivo SQLite **atlas-y-cat.db** y lo descarga para interactuar con los datos registrados
 
 ```{r}
 #| label: control_db
