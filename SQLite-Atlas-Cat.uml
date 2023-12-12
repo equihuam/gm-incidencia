@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>ea218ad4-65e6-44ca-aaea-bb55e5265e88.SCHEMA:main</OriginalElement>
+  <nodes>
+    <node x="-2212.107567567568" y="50.85999999999993">ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_files</node>
+    <node x="-1788.5" y="396.35999999999996">ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.temas_doc</node>
+    <node x="-1471.9356756756754" y="50.85999999999993">ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders</node>
+    <node x="-1789.0" y="-120.5">ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_users</node>
+    <node x="-1804.031081081081" y="168.03189189189186">ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.conceptos</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.conceptos" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.conceptos" relationship="REFERENCES">
+      <point x="36.53108108108108" y="60.5" />
+      <point x="-1709.0" y="306.53189189189186" />
+      <point x="-1597.0" y="306.53189189189186" />
+      <point x="-1597.0" y="228.53189189189186" />
+      <point x="58.5" y="0.0" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.temas_doc" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.conceptos" relationship="REFERENCES">
+      <point x="-15.531081081081084" y="-38.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders" relationship="REFERENCES">
+      <point x="0.0" y="346.50000000000006" />
+      <point x="-1349.4356756756754" y="761.3599999999999" />
+      <point x="-1573.4356756756754" y="761.3599999999999" />
+      <point x="-1573.4356756756754" y="669.0" />
+      <point x="-104.56432432432462" y="271.6400000000001" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_users" relationship="REFERENCES">
+      <point x="0.0" y="-346.5" />
+      <point x="-1349.4356756756754" y="-80.80648648648642" />
+      <point x="67.40270270270253" y="-42.80648648648642" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.temas_doc" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders" relationship="REFERENCES">
+      <point x="58.5" y="-22.860000000000014" />
+      <point x="-1450.6194594594592" y="411.49999999999994" />
+      <point x="-1450.6194594594592" y="397.3599999999999" />
+      <point x="-122.5" y="0.0" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_files" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_folders" relationship="REFERENCES">
+      <point x="124.60756756756791" y="171.6400000000001" />
+      <point x="-1718.9678378378376" y="569.0" />
+      <point x="-1718.9678378378376" y="569.0" />
+      <point x="-125.56432432432462" y="171.6400000000001" />
+    </edge>
+    <edge source="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_files" target="ea218ad4-65e6-44ca-aaea-bb55e5265e88.TABLE:main.drive_users" relationship="REFERENCES">
+      <point x="-81.39243243243209" y="-346.3599999999999" />
+      <point x="-2171.0" y="-74.0" />
+      <point x="-55.0" y="-36.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.8" showDependencies="false" x="-1719.5" y="320.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
