@@ -1,0 +1,25 @@
+digraph "main" {
+
+splines  = ortho;
+fontname = "Inconsolata";
+
+node [colorscheme = ylgnbu4];
+edge [colorscheme = dark28, dir = both];
+
+conceptos     [shape = record, pos = "-8.143,9.066!"    , label = "{ conceptos |  tema : text\l  concepto : text\l  id_tema : integer\l| id : integer\l }"];
+drive_files   [shape = record, pos = "-4.715,14.978!"   , label = "{ drive_files |  _parent : text\l  _owner : text\l  lastModifyingUser : text\l  kind : text\l  copyRequiresWriterPermission : integer\l  writersCanShare : integer\l  viewedByMe : integer\l  mimeType : text\l  parents : text\l  iconLink : text\l  shared : integer\l  webViewLink : text\l  viewersCanCopyContent : integer\l  hasThumbnail : integer\l  spaces : text\l  name : text\l  starred : integer\l  trashed : integer\l  explicitlyTrashed : integer\l  createdTime : text\l  modifiedTime : text\l  quotaBytesUsed : text\l  version : text\l  ownedByMe : integer\l  isAppAuthorized : integer\l  thumbnailVersion : text\l  modifiedByMe : integer\l  linkShareMetadata : text\l| id : text\l }"];
+drive_folders [shape = record, pos = "-13.348,14.870!"  , label = "{ drive_folders |  _parent : text\l  _owner : text\l  lastModifyingUser : text\l  kind : text\l  name : text\l  mimeType : text\l  starred : integer\l  trashed : integer\l  explicitlyTrashed : integer\l  spaces : text\l  version : text\l  webViewLink : text\l  iconLink : text\l  hasThumbnail : integer\l  thumbnailVersion : text\l  viewedByMe : integer\l  createdTime : text\l  modifiedTime : text\l  modifiedByMe : integer\l  shared : integer\l  ownedByMe : integer\l  viewersCanCopyContent : integer\l  copyRequiresWriterPermission : integer\l  writersCanShare : integer\l  folderColorRgb : text\l  quotaBytesUsed : text\l  isAppAuthorized : integer\l  linkShareMetadata : text\l  parents : text\l| id : text\l }"];
+drive_users   [shape = record, pos = "-8.143,16.660!"   , label = "{ drive_users |  kind : text\l  displayName : text\l  photoLink : text\l  me : integer\l  emailAddress : text\l| permissionId : text\l }"];
+temas_doc     [shape = record, pos = "-8.143,11.111!"   , label = "{ temas_doc |  id_doc : text\l  id_tema : integer\l }"];
+
+conceptos     -> conceptos     [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "id_tema:id", headlabel = ""];
+drive_files   -> drive_folders [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "_parent:id", headlabel = ""];
+drive_files   -> drive_users   [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "lastModifyingUser:permissionId", headlabel = ""];
+drive_files   -> drive_users   [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "_owner:permissionId", headlabel = ""];
+drive_folders -> drive_folders [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "_parent:id", headlabel = ""];
+drive_folders -> drive_users   [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "lastModifyingUser:permissionId", headlabel = ""];
+drive_folders -> drive_users   [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "_owner:permissionId", headlabel = ""];
+temas_doc     -> conceptos     [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "id_tema:id", headlabel = ""];
+temas_doc     -> drive_files   [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "id_doc:id", headlabel = ""];
+
+}

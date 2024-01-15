@@ -4,11 +4,7 @@ author: "Miguel Equihua"
 date: "2023-12-1"
 categories: [conceptos,herramientas]
 lang: es
-filters:
-  - interactive-sql
-databases:
-  - name: atlas-y-cat.db
-    path: "./"
+tables: yes
 format:
   html:
     toc: true
@@ -16,21 +12,45 @@ format:
     code-fold: true
 ---
 
-```{r inicio, warning=FALSE, include=FALSE}
+```{=html}
+<!--
+TODO  probar relación interactiva con la base de datos
+filters:
+  - interactive-sql
+databases:
+  - name: atlas-y-cat.db
+    path: "./"
+
+-->
+```
+```{r}
+#| label: inicio
+#| echo: false
+#| message: false
+#| warning: false
+#| include: false
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(googledrive))
 suppressPackageStartupMessages(library(googlesheets4))
 library(readxl)
-library(knitr)
-library(kableExtra)
+#library(knitr)
+#library(kableExtra)
+library(flextable)
 library(igraph)
 library(DBI)
 library(RSQLite)
+library(reticulate)
 ```
 
-La aplicación para operar rutinaria y automáticamente con *Google Drive* para registrar en una base de datos *SQLite* los productos contenidos de los P cvronaii ya está lista.
 
-```{r echo=FALSE, message=FALSE}
+La aplicación para operar rutinaria y automáticamente con Google Drive para registrar en una base de datos SQLite los productos contenidos de los Pronaii ya está lista.
+
+
+```{r}
+#| label: control_db
+#| echo: false
+#| message: false
+
 # Autenticación genérica
 suppressMessages(drive_auth(email = TRUE))
 
@@ -50,29 +70,49 @@ con_datos <- dbConnect(drv = SQLite(), dbname = "atlas-y-cat.db")
 
 ```
 
-Ahora podemos ver la lista de tablas que tiene la base dde datos.
+Ahora podemos ver la lista de tablas que tiene la base de datos.
 
 ```{r}
+#| label: tablas_control
+#| echo: false
+#| message: false
+#| tbl-cap: Lista de tablas de control en la base de datos
 
 # Show List of Tables
-as.data.frame(dbListTables(con_datos))
-
+data.frame(tabla = dbListTables(con_datos)) %>%
+  flextable(cwidth = 3) %>% 
+  set_header_labels(values = list(tabla = "tabla")) %>% 
+  theme_zebra()
 ```
 
 ¿Qué proyectos hay en el *atlas-catálogo*?
 
 ```{r}
+#| label: reg_pronaii
+#| echo: false
+#| message: false
+#| tbl-cap: Proyectos registrados en Google Drive
+
 # Get table
 dbReadTable(con_datos, 'drive_folders') %>% 
   select(name, id) %>% 
   filter(!(grepl("0-control|Materiales para", name))) %>% 
-  kable(col.names = c("Carpeta", "Google Drive id"))
+  mutate(id = str_replace(id, "(?<=.{4})(.*)", "********")) %>% 
+  flextable() %>% 
+  set_header_labels(values = list(name = "Pronaii", id = "GoDr id")) %>% 
+  width(c(1,2), width = c(7,3), unit = "cm") %>% 
+  theme_zebra()
 
 ```
 
 Ahora, veamos cuántos documentos hay en cada uno de estos proyectos.
 
 ```{r}
+#| label: num_docs_pronaii
+#| echo: false
+#| message: false
+#| tbl-cap: Numero de productos por Pronaii en Google Drive
+
 dbReadTable(con_datos, "drive_folders") %>%
       filter(!grepl("0-control|Materiales para", name)) %>%
       select(id, name) %>% 
@@ -82,5 +122,9 @@ dbReadTable(con_datos, "drive_folders") %>%
       group_by(name) %>% 
       summarise(docs = sum(!is.na(name.file), na.rm = TRUE)) %>% 
       filter(!is.na(name)) %>%
-      kable(col.names = c("Proyecto", "Num docs"))
+      flextable() %>% 
+      set_header_labels(values = list(name = "Pronaii", docs = "Num docs")) %>% 
+      width(c(1,2), width = c(7,3), unit = "cm") %>% 
+      theme_zebra()
+
 ```
