@@ -28,7 +28,7 @@ library(DBI)
 library(RSQLite)
 ```
 
-La aplicación para operar rutinaria y automáticamente con *Google Drive* para registrar en una base de datos *SQLite* los productos contenidos de los Pronaii ya está lista.
+La aplicación para operar rutinaria y automáticamente con *Google Drive* para registrar en una base de datos *SQLite* los productos contenidos de los P cvronaii ya está lista.
 
 ```{r echo=FALSE, message=FALSE}
 # Autenticación genérica
