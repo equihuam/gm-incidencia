@@ -2,22 +2,30 @@
 title: "Tablero de ejemplo"
 author: "Pronace SSyS"
 format: dashboard
+orientation: columns
 lang: es
-
 ---
+
+## Column {width=30%}
 
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
 
-## Row {height=70%}
-
 ```{r}
 "mapa"
 ```
 
-## Row {height=30%}
+```{r}
+
+"[DashBoard](https://quarto.org/docs/dashboards/layout.html)"
+
+```
+
+
+
+## Column {width=70%}
 
 ```{r}
 #| fig-width: 6
@@ -35,6 +43,4 @@ fig
 
 ```
 
-```{r}
-5 + 5
-```
+
