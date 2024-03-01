@@ -12,8 +12,7 @@ editor_options:
 
 ## Quarto
 
-Quarto te permite entrelazar contenido y código ejecutable en un documento acabado. 
-Más información sobre Quarto en [https://quarto.org](https://quarto.org). Además, a partir de la versión 1.4 de _Quarto_, incluye la opción para [crear Dahsboards](https://quarto.org/docs/dashboards/layout.html) con facilidad. 
+Esta plataforma de desarrollo te permite combinar texto explicativo o analítico junto con código ejecutable en un mismo documento. Puedes encontrar más información sobre _Quarto_ en [https://quarto.org](https://quarto.org). Además, a partir de la versión 1.4, _Quarto_, incluye la opción para [crear Dahsboards](https://quarto.org/docs/dashboards/layout.html) con facilidad. 
 
 
 ```{r}
