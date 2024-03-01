@@ -1,0 +1,40 @@
+--- 
+title: "Tablero de ejemplo"
+author: "Pronace SSyS"
+format: dashboard
+lang: es
+
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+
+## Row {height=70%}
+
+```{r}
+"mapa"
+```
+
+## Row {height=30%}
+
+```{r}
+#| fig-width: 6
+
+library(plotly)
+
+fig <- plot_ly(
+  labels = c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"),
+  parents = c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve"),
+  values = c(10, 14, 12, 10, 2, 6, 6, 4, 4),
+  type = 'sunburst'
+)
+
+fig
+
+```
+
+```{r}
+5 + 5
+```
