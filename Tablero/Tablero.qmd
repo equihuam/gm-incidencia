@@ -4,22 +4,28 @@ author: "Pronace SSyS"
 format: dashboard
 orientation: columns
 lang: es
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## Column {width=30%}
 
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Quarto te permite entrelazar contenido y código ejecutable en un documento acabado. 
+Más información sobre Quarto en [https://quarto.org](https://quarto.org). Además, a partir de la versión 1.4 de _Quarto_, incluye la opción para [crear Dahsboards](https://quarto.org/docs/dashboards/layout.html) con facilidad. 
 
 
 ```{r}
-"mapa"
-```
+library(tibble, warn.conflicts = FALSE)
 
-```{r}
+datos <- tibble(labels = c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel",
+                           "Awan", "Enoch", "Azura"),
+                parents = c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", 
+                            "Awan", "Eve"),
+                values = c(10, 14, 12, 10, 2, 6, 6, 4, 4))
 
-"[DashBoard](https://quarto.org/docs/dashboards/layout.html)"
+flextable::flextable(datos)
 
 ```
 
@@ -33,9 +39,9 @@ Quarto enables you to weave together content and executable code into a finished
 library(plotly)
 
 fig <- plot_ly(
-  labels = c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura"),
-  parents = c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve"),
-  values = c(10, 14, 12, 10, 2, 6, 6, 4, 4),
+  labels = datos$labels,
+  parents = datos$parents,
+  values = datos$values,
   type = 'sunburst'
 )
 
