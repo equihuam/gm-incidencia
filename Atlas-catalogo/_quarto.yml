@@ -1,0 +1,25 @@
+project:
+  type: book
+
+lang: es
+book:
+  title: "Atlas-catalogo"
+  author: "Pronace Sistemas Socioecológicos y Sustentailidad"
+  date: "2024/2/29"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+code-fold: true
+
+format:
+  html:
+    theme: cosmo
+  pdf: 
+    documentclass: scrreprt
+
+editor: source
+

@@ -1,0 +1,99 @@
+
+# Prefacio {.unnumbered}
+
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+El Pronace Sistemas Socioecológicos y Sustentabilidad (SSyS) promueve la producción transdisciplinaria de conocimiento científico, institucional y comunicativo para implementar acciones de conservación, restauración y uso sustentable de los sistemas socioecológicos y su riqueza biocultural. Asimismo, aplica sus esfuerzos en la reconstrucción del tejido social y comunitario, el reforzamiento de la economía local y solidaria, así como en el bienestar sostenido de las personas y el medio ambiente. Para lograrlo, incluye la participación y el acompañamiento activo de los pueblos y comunidades del país.
+
+
+
+
+```{r}
+#| label: setup
+#| include: true
+#| echo: false
+#| warning: false
+
+library(dplyr, warn.conflicts = FALSE)
+library(plotly, warn.conflicts = FALSE)
+library(webshot2, warn.conflicts = FALSE)
+library(chromote, warn.conflicts = FALSE)
+
+# Prepara el Browser a usar (default es Chome)
+m <- Chromote$new(
+  browser = Chrome$new(path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe")
+)
+
+set_default_chromote_object(m)
+b <- ChromoteSession$new()
+#b$view()
+#b$Page$navigate("https://www.whatismybrowser.com/")
+
+
+#
+rptyear <- 2018
+colours <- c("A" = "royalblue3", "B" = "red", "C" = "gold", "D" = "green4")
+
+# data
+premiumtable <- data.frame(Var1 = rep(c("A","B","C","D"),11),
+                           Var2 = c(rep(2009,4),rep(2010,4),rep(2011,4),
+                                    rep(2012,4), rep(2013,4),rep(2014,4),
+                                    rep(2015, 4),rep(2016,4),rep(2017,4),
+                                    rep(2018,4),rep(2019,4)),
+                           Freq = as.numeric(c(13223284, 3379574, 721217, 2272843,
+                                               14946074, 4274769, 753797, 2655032,
+                                               15997384, 4952687, 722556, 3035566,
+                                               16244348, 5541543, 887109, 3299966, 
+                                               15841630, 6303443, 1101696, 3751892,
+                                               14993295, 6993626, 1312650, 4158196,
+                                               13946038, 7081457, 1317428, 4711389, 
+                                               12800640, 6923012, 1345159, 
+                                               4911780, 12314663, 6449919, 1395973,
+                                               5004046, 12612704, 6968110,1507382,
+                                               5745079, 15311213, 8958588, 
+                                               1849069, 6819488)))
+
+# prepare plot data
+currentPrem <- premiumtable %>% 
+               filter(Var2 == rptyear, Freq != 0) %>% 
+               mutate(Freq = as.numeric(Freq))
+
+# create plot labels
+labels = paste0(currentPrem$Var1, "\n $",
+                prettyNum(round(as.numeric(currentPrem$Freq)/1000),
+                          big.mark = ","))
+```
+
+
+::: {.content-visible when-format="html"}
+
+```{r}
+#|fig-width: 500
+
+# create plot
+piechart <- plot_ly(currentPrem,
+                    labels = ~ labels,
+                    values = ~ Freq, type = 'pie',
+                    textposition = 'outside',
+                    textinfo = 'label',
+                    colors = colours) %>%
+  layout(title = paste("YTD Numbers:", rptyear),
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         showlegend = FALSE)
+
+htmlwidgets::saveWidget(widget = piechart, file = "pie.html")
+webshot(url = "pie.html", file = "pie.png", delay = 1, zoom = 4, vheight = 500)
+
+```
+:::
+
+\
+\
+
+::: {.content-visible when-format="pdf"}
+
+![](pie.png){width=600px}
+:::
+

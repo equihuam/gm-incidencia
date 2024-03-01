@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Atlas-catalogo",
+    "section": "",
+    "text": "Prefacio\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books. El Pronace Sistemas Socioecológicos y Sustentabilidad (SSyS) promueve la producción transdisciplinaria de conocimiento científico, institucional y comunicativo para implementar acciones de conservación, restauración y uso sustentable de los sistemas socioecológicos y su riqueza biocultural. Asimismo, aplica sus esfuerzos en la reconstrucción del tejido social y comunitario, el reforzamiento de la economía local y solidaria, así como en el bienestar sostenido de las personas y el medio ambiente. Para lograrlo, incluye la participación y el acompañamiento activo de los pueblos y comunidades del país.\n\n\nCódigo\n#|fig-width: 500\n\n# create plot\npiechart &lt;- plot_ly(currentPrem,\n                    labels = ~ labels,\n                    values = ~ Freq, type = 'pie',\n                    textposition = 'outside',\n                    textinfo = 'label',\n                    colors = colours) %&gt;%\n  layout(title = paste(\"YTD Numbers:\", rptyear),\n         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),\n         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),\n         showlegend = FALSE)\n\nhtmlwidgets::saveWidget(widget = piechart, file = \"pie.html\")\nwebshot(url = \"pie.html\", file = \"pie.png\", delay = 1, zoom = 4, vheight = 500)"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\nCódigo\n1 + 1\n\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCódigo\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
