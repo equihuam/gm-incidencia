@@ -72,12 +72,13 @@ labels = paste0(currentPrem$Var1, "\n $",
 #|fig-width: 500
 
 # create plot
-piechart <- plot_ly(currentPrem,
-                    labels = ~ labels,
-                    values = ~ Freq, type = 'pie',
-                    textposition = 'outside',
-                    textinfo = 'label',
-                    colors = colours) %>%
+piechart <- 
+  plot_ly(currentPrem,
+          labels = ~ labels,
+          values = ~ Freq, type = 'pie',
+          textposition = 'outside',
+          textinfo = 'label',
+          colors = colours) %>%
   layout(title = paste("YTD Numbers:", rptyear),
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
