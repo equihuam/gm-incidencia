@@ -10,6 +10,7 @@ library(leaflet)
 library(leaflet.extras)
 library(stringr)
 #setwd("oh_my_gits/sunburst/")
+
 edos = st_read("00ent(1).json") 
 
 pronas = read_xlsx("Proyectos-Pronacess-SSyS.xlsx") |>
