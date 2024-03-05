@@ -72,49 +72,36 @@ Esta plataforma de desarrollo te permite combinar texto explicativo o analítico
 #| fig-width: 6
 #| title: Círculo
 
+library(bslib)
 
-fig <-  datos2 %>%
-  plot_ly(ids = ~ .$id,
-          labels = ~ .$etiqueta,
-          parents = ~ .$grupo,
-          maxdepth = 3,
-          #branchvalues = 'total',
-          customdata = .$id, 
-          type = 'sunburst',
-          source = "sunSource", 
-          insidetextorientation = 'auto',
-          marker = list(colors = ~ c("#636efa","#EF553B","#00cc96","#ab63fa","#19d3f3",
-                                     "#e763fa", "#FECB52","#FFA15A","#FF6692","#B6E880")))
-
-fig
-
-
-```
-
-## Column {width=50%}
-
-::: {.card title="Socioecosistemas y sustentabilidad"}
-
-```{r}
-#| title: Mapa
-
-#Nasa: NASAGIBS.ViirsEarthAtNight2012
-#Google map: Esri.WorldImagery
-#Gray: Esri.WorldGrayCanvas
-#Terrain: Esri.WorldTerrain
-#Topo Map: Esri.WorldTopoMap
-
-m <- leaflet(options = leafletOptions(zoomSnap = 0.25, 
+layout_column_wrap(
+    width = 1 / 2,
+    card(datos2 %>%
+           plot_ly(ids = ~ .$id,
+           labels = ~ .$etiqueta,
+           parents = ~ .$grupo,
+           maxdepth = 3,
+           customdata = .$id, 
+           type = 'sunburst',
+           source = "sunSource", 
+           insidetextorientation = 'auto',
+           marker = list(colors = ~ c("#636efa","#EF553B","#00cc96","#ab63fa","#19d3f3",
+                                      "#e763fa", "#FECB52","#FFA15A","#FF6692","#B6E880")
+                         )
+           )
+         ),
+    card(leaflet(options = leafletOptions(zoomSnap = 0.25, 
                                       zoomDelta = 0.25,
-                                      attributionControl = FALSE)) %>% 
-   addTiles() %>% 
-   setView( lng = -101, lat = 26, zoom = 4.5) %>% 
-   addProviderTiles("Esri.WorldImagery")
-m
+                                      attributionControl = FALSE)) %>%
+           addTiles() %>%
+           setView( lng = -101, lat = 26, zoom = 4.5) %>%
+           addProviderTiles("Esri.WorldImagery")
+         )
+    )
 
 ```
 
-:::
+
 
 # Datos
 
@@ -133,6 +120,7 @@ datatable(datos2)
 library(bslib)
 library(palmerpenguins)
 library(ggplot2)
+
 
 ui <- page_fillable(
   card(
@@ -181,6 +169,7 @@ server <- function(input, output, session)
           ggokabeito::scale_fill_okabe_ito() +
           theme_minimal(base_size = 18) +
           theme(legend.position = "top")
+
       })
 }
 
@@ -379,4 +368,50 @@ shinyApp(ui2, server2)
 ```
 
 
+# Aprendizaje
+
+```{r}
+mapa_leaflet <- leaflet(options = leafletOptions(zoomSnap = 0.25, 
+                                      zoomDelta = 0.25,
+                                      attributionControl = FALSE)) %>% 
+   addTiles() %>% 
+   setView( lng = -101, lat = 26, zoom = 4.5) %>% 
+   addProviderTiles("Esri.WorldImagery")
+
+```
+
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 500
+
+library(bslib)
+library(shiny)
+library(htmltools)
+library(plotly)
+library(leaflet)
+
+
+ui <- page_fillable(
+  card(
+    card_header("Mapa",
+    plotOutput("plt"))
+    )
+)
+server <- function(input, output, session) 
+  {
+    output$plt <- renderPlot(
+      {leaflet(options = leafletOptions(zoomSnap = 0.25, 
+                                        zoomDelta = 0.25,
+                                        attributionControl = FALSE)) %>%
+          addTiles() %>% 
+          setView( lng = -101, 
+                   lat = 26, 
+                   zoom = 4.5) %>% 
+          addProviderTiles("Esri.WorldImagery")
+      })
+}
+
+shinyApp(ui, server)
+```
 
